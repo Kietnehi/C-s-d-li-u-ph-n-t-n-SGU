@@ -74,10 +74,10 @@
   - [💡 Phần 2 – Đồ án riêng (Chuyên đề mở rộng CSDL phân tán)](#-phần-2--đồ-án-riêng-chuyên-đề-mở-rộng-csdl-phân-tán)
 - [🗃️ Tóm tắt Đồ án chung – SQL Server](#4-tóm-tắt-đồ-án-chung--sql-server-fundmanagement)
 - [🧠 Đồ án riêng – Hadoop & MapReduce](#5-đồ-án-riêng--hadoop--mapreduce-)
-- [🔄 Liên hệ giữa hai phần](#-liên-hệ-giữa-hai-phần)
-- [🏁 Kết quả & Đánh giá](#-kết-quả--đánh-giá)
-- [👨‍💻 Tác giả](#-tác-giả)
-- [⚖️ License](#-license)
+- [🔄 Liên hệ giữa hai phần](#liên-hệ-giữa-hai-phần)
+- [🏁 Kết quả & Đánh giá](#kết-quả--đánh-giá)
+- [👨‍💻 Tác giả](#tác-giả)
+- [⚖️ License](#license)
 
 ---
 

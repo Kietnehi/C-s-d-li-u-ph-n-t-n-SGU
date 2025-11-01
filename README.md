@@ -61,23 +61,23 @@
 
 ---
 
-## 📑 MỤC LỤC
+## 📚 MỤC LỤC
 
-1. [🚀 Giới thiệu tổng quan](#-giới-thiệu-tổng-quan)
-2. [🏆 Thành tích nổi bật](#-thành-tích-nổi-bật)
-3. [📂 Cấu trúc nội dung repo](#-cấu-trúc-nội-dung-repo)
-4. [🎯 Mục tiêu của repo](#-mục-tiêu-của-repo)
-5. [🌐✨ Liên kết tài nguyên](#-liên-kết-tài-nguyên)
-6. [🏫 Thông tin chung](#-thông-tin-chung)
-7. [📘 Tổng quan về đồ án lớp DCT122C3](#2-tổng-quan-về-đồ-án-lớp-dct122c3)
-   - [🧩 Phần 1 – Đồ án chung (SQL Server – Hệ thống quản lý quỹ)](#-phần-1--đồ-án-chung-sql-server--hệ-thống-quản-lý-quỹ)
-   - [💡 Phần 2 – Đồ án riêng (Chuyên đề mở rộng CSDL phân tán)](#-phần-2--đồ-án-riêng-chuyên-đề-mở-rộng-csdl-phân-tán)
-8. [🗃️ Tóm tắt Đồ án chung – SQL Server](#4-tóm-tắt-đồ-án-chung--sql-server-fundmanagement)
-9. [🧠 Đồ án riêng – Hadoop & MapReduce](#5-đồ-án-riêng--hadoop--mapreduce-)
-10. [🔄 Liên hệ giữa hai phần](#-liên-hệ-giữa-hai-phần)
-11. [🏁 Kết quả & Đánh giá](#-kết-quả--đánh-giá)
-12. [👨‍💻 Tác giả](#-tác-giả)
-13. [⚖️ License](#-license)
+- [🚀 Giới thiệu tổng quan](#-giới-thiệu-tổng-quan)
+- [🏆 Thành tích nổi bật](#-thành-tích-nổi-bật)
+- [📂 Cấu trúc nội dung repo](#-cấu-trúc-nội-dung-repo)
+- [🎯 Mục tiêu của repo](#-mục-tiêu-của-repo)
+- [🌐✨ Liên kết tài nguyên](#-liên-kết-tài-nguyên)
+- [🏫 Thông tin chung](#-thông-tin-chung)
+- [📘 Tổng quan về đồ án lớp DCT122C3](#2-tổng-quan-về-đồ-án-lớp-dct122c3)
+  - [🧩 Phần 1 – Đồ án chung (SQL Server – Hệ thống quản lý quỹ)](#-phần-1--đồ-án-chung-sql-server--hệ-thống-quản-lý-quỹ)
+  - [💡 Phần 2 – Đồ án riêng (Chuyên đề mở rộng CSDL phân tán)](#-phần-2--đồ-án-riêng-chuyên-đề-mở-rộng-csdl-phân-tán)
+- [🗃️ Tóm tắt Đồ án chung – SQL Server](#4-tóm-tắt-đồ-án-chung--sql-server-fundmanagement)
+- [🧠 Đồ án riêng – Hadoop & MapReduce](#5-đồ-án-riêng--hadoop--mapreduce-)
+- [🔄 Liên hệ giữa hai phần](#-liên-hệ-giữa-hai-phần)
+- [🏁 Kết quả & Đánh giá](#-kết-quả--đánh-giá)
+- [👨‍💻 Tác giả](#-tác-giả)
+- [⚖️ License](#-license)
 
 ---
 

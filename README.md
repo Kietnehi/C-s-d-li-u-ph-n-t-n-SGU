@@ -1,45 +1,85 @@
+
 <!-- 🌐 Banner mở đầu cho README -->
 <div align="center">
 
-<h2>🚀 ĐỒ ÁN: CƠ SỞ DỮ LIỆU PHÂN TÁN - SGU 🧠</h2>
-<p><i>Triển khai và phân tích hệ thống CSDL phân tán với Hadoop, SQL Server, AWS</i></p>
+  <!-- Tiêu đề -->
+  <h2>🚀 ĐỒ ÁN: CƠ SỞ DỮ LIỆU PHÂN TÁN (SGU)</h2>
+  <p><i>Xây dựng, phân tích và mô phỏng hệ CSDL phân tán trên nhiều nền tảng</i></p>
 
-<table>
-  <tr>
-    <!-- SQL Server -->
-    <td align="center" width="140">
-      <img src="./asset/3.png" alt="Microsoft SQL Server" width="100"><br>
-      <sub><b>Microsoft SQL Server</b></sub>
-    </td>
-    <!-- Hadoop -->
-    <td align="center" width="140">
-      <img src="./asset/2.jpg" alt="Hadoop Ecosystem" width="110"><br>
-      <sub><b>Hadoop Ecosystem</b></sub>
-    </td>
-    <!-- SGU (center, lớn nhất) -->
-    <td align="center" width="200">
-      <img src="./asset/5.png" alt="Đại học Sài Gòn (SGU)" width="160"><br>
-      <sub><b>Đại học Sài Gòn (SGU)</b></sub>
-    </td>
-    <!-- AWS -->
-    <td align="center" width="140">
-      <img src="./asset/1.jpg" alt="Amazon Web Services (AWS)" width="110"><br>
-      <sub><b>Amazon Web Services</b></sub>
-    </td>
-    <!-- Mô hình phân tán -->
-    <td align="center" width="140">
-      <img src="./asset/4.png" alt="Mô hình CSDL Phân Tán" width="110"><br>
-      <sub><b>Mô hình CSDL Phân Tán</b></sub>
-    </td>
-  </tr>
-</table>
+  <!-- Badges -->
+  <p>
+    <img src="https://img.shields.io/badge/University-SGU-blue?style=for-the-badge">
+    <img src="https://img.shields.io/badge/Subject-Distributed%20Database-orange?style=for-the-badge">
+    <img src="https://img.shields.io/badge/Tech-Hadoop-yellow?style=for-the-badge&logo=apachehadoop">
+    <img src="https://img.shields.io/badge/DB-Microsoft%20SQL%20Server-red?style=for-the-badge&logo=microsoftsqlserver">
+    <img src="https://img.shields.io/badge/Cloud-AWS-green?style=for-the-badge&logo=amazonaws">
+  </p>
 
-<hr style="width:60%; border: 1px solid #ccc;">
+  <!-- Bảng logo -->
+  <table>
+    <tr>
+      <!-- SQL Server -->
+      <td align="center" width="140">
+        <img src="./asset/3.png" alt="Microsoft SQL Server" width="100"><br>
+        <sub><b>Microsoft SQL Server</b></sub>
+      </td>
+      <!-- Hadoop -->
+      <td align="center" width="140">
+        <img src="./asset/2.jpg" alt="Hadoop Ecosystem" width="110"><br>
+        <sub><b>Hadoop Ecosystem</b></sub>
+      </td>
+      <!-- SGU (center) -->
+      <td align="center" width="200">
+        <img src="./asset/5.png" alt="Đại học Sài Gòn (SGU)" width="160"><br>
+        <sub><b>Đại học Sài Gòn (SGU)</b></sub>
+      </td>
+      <!-- AWS -->
+      <td align="center" width="140">
+        <img src="./asset/1.jpg" alt="Amazon Web Services (AWS)" width="110"><br>
+        <sub><b>Amazon Web Services</b></sub>
+      </td>
+      <!-- Mô hình phân tán -->
+      <td align="center" width="140">
+        <img src="./asset/4.png" alt="Mô hình CSDL Phân Tán" width="110"><br>
+        <sub><b>Mô hình CSDL Phân Tán</b></sub>
+      </td>
+    </tr>
+  </table>
 
-<p>📚 <b>Trường Đại học Sài Gòn</b> • Khoa CNTT • Môn học: <b>Cơ sở dữ liệu phân tán</b></p>
+  <!-- Phân cách -->
+  <br>
+  <img src="https://img.shields.io/badge/status-in%20progress-yellow" />
 
+  <hr style="width:60%; border: 1px solid #eee;">
+
+  <!-- Thông tin lớp / mô tả -->
+  <p>
+    📚 <b>Khoa Công nghệ Thông tin</b> • Trường Đại học Sài Gòn (SGU) <br>
+    🧪 Môn học: <b>Cơ sở dữ liệu phân tán</b> • Học phần thực hành
+  </p>
 </div>
 
+---
+
+## 📑 MỤC LỤC
+
+1. [🚀 Giới thiệu tổng quan](#-giới-thiệu-tổng-quan)
+2. [🏆 Thành tích nổi bật](#-thành-tích-nổi-bật)
+3. [📂 Cấu trúc nội dung repo](#-cấu-trúc-nội-dung-repo)
+4. [🎯 Mục tiêu của repo](#-mục-tiêu-của-repo)
+5. [🌐✨ Liên kết tài nguyên](#-liên-kết-tài-nguyên)
+6. [🏫 Thông tin chung](#-thông-tin-chung)
+7. [📘 Tổng quan về đồ án lớp DCT122C3](#2-tổng-quan-về-đồ-án-lớp-dct122c3)
+   - [🧩 Phần 1 – Đồ án chung (SQL Server – Hệ thống quản lý quỹ)](#-phần-1--đồ-án-chung-sql-server--hệ-thống-quản-lý-quỹ)
+   - [💡 Phần 2 – Đồ án riêng (Chuyên đề mở rộng CSDL phân tán)](#-phần-2--đồ-án-riêng-chuyên-đề-mở-rộng-csdl-phân-tán)
+8. [🗃️ Tóm tắt Đồ án chung – SQL Server](#4-tóm-tắt-đồ-án-chung--sql-server-fundmanagement)
+9. [🧠 Đồ án riêng – Hadoop & MapReduce](#5-đồ-án-riêng--hadoop--mapreduce-)
+10. [🔄 Liên hệ giữa hai phần](#-liên-hệ-giữa-hai-phần)
+11. [🏁 Kết quả & Đánh giá](#-kết-quả--đánh-giá)
+12. [👨‍💻 Tác giả](#-tác-giả)
+13. [⚖️ License](#-license)
+
+---
 
 # 📘 ĐỒ ÁN CƠ SỞ DỮ LIỆU PHÂN TÁN & KHO TÀI LIỆU CHUYÊN SÂU MÔN CSDL PHÂN TÁN – SGU  
 > Tổng hợp và hệ thống hóa kiến thức – từ **lý thuyết phân tán** đến **triển khai thực tế**.
@@ -158,19 +198,56 @@ Ngoài các file báo cáo chính, thư mục này còn bao gồm:
 
 ---
 
-## 1. Thông tin chung
+<div align="center">
 
-- **Trường**: Trường Đại học Sài Gòn  
-- **Khoa**: Công nghệ Thông tin  
-- **Môn học**: Cơ sở dữ liệu phân tán  
-- **Giảng viên hướng dẫn**: **Nguyễn Quốc Huy**  
-- **Lớp**: **DCT122C3**  
-- **Nhóm thực hiện**: **Nhóm 11**  
-  - Trà Đức Toàn – 3122411217  
-  - Trương Phú Kiệt – 3122411109  
-- **Thời gian**: *Thành phố Hồ Chí Minh, tháng 3 năm 2025*
+<h2>🏫 <b>THÔNG TIN CHUNG</b></h2>
+
+<table border="0" cellspacing="0" cellpadding="6">
+  <tr>
+    <td align="left" style="font-size: 18px;">
+      <b>🏛️ Trường:</b> Trường Đại học Sài Gòn  
+    </td>
+  </tr>
+  <tr>
+    <td align="left" style="font-size: 18px;">
+      <b>💻 Khoa:</b> Công nghệ Thông tin  
+    </td>
+  </tr>
+  <tr>
+    <td align="left" style="font-size: 18px;">
+      <b>📘 Môn học:</b> Cơ sở dữ liệu phân tán  
+    </td>
+  </tr>
+  <tr>
+    <td align="left" style="font-size: 18px;">
+      <b>👨‍🏫 Giảng viên hướng dẫn:</b> <b>TS.Nguyễn Quốc Huy</b>  
+    </td>
+  </tr>
+  <tr>
+    <td align="left" style="font-size: 18px;">
+      <b>🧩 Lớp:</b> <b>DCT122C3</b>  
+    </td>
+  </tr>
+  <tr>
+    <td align="left" style="font-size: 18px;">
+      <b>👥 Nhóm thực hiện:</b> <b>Nhóm 11</b>  
+      <ul style="font-size: 17px; text-align: left;">
+        <li>Trà Đức Toàn – 3122411217</li>
+        <li>Trương Phú Kiệt – 3122411109</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td align="left" style="font-size: 18px;">
+      <b>🗓️ Thời gian:</b> <i>Thành phố Hồ Chí Minh, tháng 3 năm 2025</i>  
+    </td>
+  </tr>
+</table>
+
+</div>
 
 ---
+
 
 ## 2. Tổng quan về đồ án lớp DCT122C3
 

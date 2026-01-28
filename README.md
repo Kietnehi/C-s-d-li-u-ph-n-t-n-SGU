@@ -161,7 +161,7 @@ which was the **highest score in class DCT122C3**, with the **Specialized Hadoop
 
 🎓 **Course Materials – Distributed Database Systems (Class DCT122C3 – Saigon University)**
 
-<h2 align="center">
+<h2>
   <img src="https://readme-typing-svg.demolab.com?font=Poppins&size=28&pause=1000&color=00B4D8&width=500&lines=🔗+Resource+Links;Legendary+Repository+DCT122C3;Distributed+DB+–+Saigon+University" alt="Typing SVG" />
 </h2>
 
@@ -171,6 +171,7 @@ which was the **highest score in class DCT122C3**, with the **Specialized Hadoop
 
 ## 💾 The Legendary Repository – DCT122C3 📚
 
+
 Have you ever wanted to **view the complete projects, slides, and reports** of a *Distributed Database Systems* class in one place?
 
 From detailed **SQL Server Replication** setup guides to advanced topics such as
@@ -178,14 +179,21 @@ From detailed **SQL Server Replication** setup guides to advanced topics such as
 **Hadoop – MapReduce, Talend, PostgreSQL, Oracle, MySQL, Blockchain...**
 
 > Everything is grouped into **a single Google Drive folder** –  
-
 > a place that contains the “**combat-ready knowledge base**” of the entire DCT122C3 class – Saigon University 💡  
 
-📁 [![Google Drive](https://img.shields.io/badge/📂_Drive-Class_Resources-blue?style=for-the-badge&logo=google-drive)](https://drive.google.com/drive/folders/1huLhz03fFSucvnEqQ9PsZSp-jgrxtE8J)
+<br/>
+<div align="center">
+
+📁  
+[![Google Drive](https://img.shields.io/badge/📂_Drive-Class_Resources-blue?style=for-the-badge&logo=google-drive)](https://drive.google.com/drive/folders/1huLhz03fFSucvnEqQ9PsZSp-jgrxtE8J)
+
+<br/>
 
 💻 **Personal GitHub – Truong Phu Kiet**  
 
 [![GitHub Profile](https://img.shields.io/badge/GitHub-Kietnehi-black?style=for-the-badge&logo=github)](https://github.com/Kietnehi)
+
+</div>
 
 
 ---
@@ -465,3 +473,4 @@ You may **use, cite, or improve** it for academic purposes.
 ✨ *“Distributing Data – Connecting Knowledge.”* ✨
 
 </div>
+

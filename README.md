@@ -1,4 +1,3 @@
-Here is the full translation of the README into English. The layout, logic, HTML formatting, and structure have been preserved exactly as requested.
 
 ---
 
@@ -473,4 +472,5 @@ You may **use, cite, or improve** it for academic purposes.
 ✨ *“Distributing Data – Connecting Knowledge.”* ✨
 
 </div>
+
 

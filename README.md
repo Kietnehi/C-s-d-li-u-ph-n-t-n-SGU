@@ -1,395 +1,427 @@
 
-<!-- 🌐 Banner mở đầu cho README -->
 <div align="center">
 
-  <!-- Tiêu đề -->
-  <h2>🚀 ĐỒ ÁN: CƠ SỞ DỮ LIỆU PHÂN TÁN (SGU)</h2>
-  <p><i>Xây dựng, phân tích và mô phỏng hệ CSDL phân tán trên nhiều nền tảng</i></p>
+    <h2>🚀 PROJECT: DISTRIBUTED DATABASE SYSTEMS (SGU)</h2>
+  <p><i>Build, analyze, and simulate distributed database systems on multiple platforms</i></p>
 
-  <!-- Badges -->
-  <p>
-    <img src="https://img.shields.io/badge/University-SGU-blue?style=for-the-badge">
-    <img src="https://img.shields.io/badge/Subject-Distributed%20Database-orange?style=for-the-badge">
-    <img src="https://img.shields.io/badge/Tech-Hadoop-yellow?style=for-the-badge&logo=apachehadoop">
-    <img src="https://img.shields.io/badge/DB-Microsoft%20SQL%20Server-red?style=for-the-badge&logo=microsoftsqlserver">
-    <img src="https://img.shields.io/badge/Cloud-AWS-green?style=for-the-badge&logo=amazonaws">
-  </p>
+    <p>
+    <img src="[https://img.shields.io/badge/University-SGU-blue?style=for-the-badge](https://img.shields.io/badge/University-SGU-blue?style=for-the-badge)">
+    <img src="[https://img.shields.io/badge/Subject-Distributed%20Database-orange?style=for-the-badge](https://img.shields.io/badge/Subject-Distributed%20Database-orange?style=for-the-badge)">
+    <img src="[https://img.shields.io/badge/Tech-Hadoop-yellow?style=for-the-badge&logo=apachehadoop](https://img.shields.io/badge/Tech-Hadoop-yellow?style=for-the-badge&logo=apachehadoop)">
+    <img src="[https://img.shields.io/badge/DB-Microsoft%20SQL%20Server-red?style=for-the-badge&logo=microsoftsqlserver](https://img.shields.io/badge/DB-Microsoft%20SQL%20Server-red?style=for-the-badge&logo=microsoftsqlserver)">
+    <img src="[https://img.shields.io/badge/Cloud-AWS-green?style=for-the-badge&logo=amazonaws](https://img.shields.io/badge/Cloud-AWS-green?style=for-the-badge&logo=amazonaws)">
+  </p>
 
-  <!-- Bảng logo -->
-  <table>
-    <tr>
-      <!-- SQL Server -->
-      <td align="center" width="140">
-        <img src="./asset/3.png" alt="Microsoft SQL Server" width="100"><br>
-        <sub><b>Microsoft SQL Server</b></sub>
-      </td>
-      <!-- Hadoop -->
-      <td align="center" width="140">
-        <img src="./asset/2.jpg" alt="Hadoop Ecosystem" width="110"><br>
-        <sub><b>Hadoop Ecosystem</b></sub>
-      </td>
-      <!-- SGU (center) -->
-      <td align="center" width="200">
-        <img src="./asset/5.png" alt="Đại học Sài Gòn (SGU)" width="160"><br>
-        <sub><b>Đại học Sài Gòn (SGU)</b></sub>
-      </td>
-      <!-- AWS -->
-      <td align="center" width="140">
-        <img src="./asset/1.jpg" alt="Amazon Web Services (AWS)" width="110"><br>
-        <sub><b>Amazon Web Services</b></sub>
-      </td>
-      <!-- Mô hình phân tán -->
-      <td align="center" width="140">
-        <img src="./asset/4.png" alt="Mô hình CSDL Phân Tán" width="110"><br>
-        <sub><b>Mô hình CSDL Phân Tán</b></sub>
-      </td>
-    </tr>
-  </table>
+    <table>
+    <tr>
+            <td align="center" width="140">
+        <img src="./asset/3.png" alt="Microsoft SQL Server" width="100">
 
-  <!-- Phân cách -->
-  <br>
-  <img src="https://img.shields.io/badge/status-in%20progress-yellow" />
 
-  <hr style="width:60%; border: 1px solid #eee;">
 
-  <!-- Thông tin lớp / mô tả -->
-  <p>
-    📚 <b>Khoa Công nghệ Thông tin</b> • Trường Đại học Sài Gòn (SGU) <br>
-    🧪 Môn học: <b>Cơ sở dữ liệu phân tán</b> • Học phần thực hành
-  </p>
+
+        <sub><b>Microsoft SQL Server</b></sub>
+      </td>
+            <td align="center" width="140">
+        <img src="./asset/2.jpg" alt="Hadoop Ecosystem" width="110">
+
+
+
+
+        <sub><b>Hadoop Ecosystem</b></sub>
+      </td>
+            <td align="center" width="200">
+        <img src="./asset/5.png" alt="Saigon University (SGU)" width="160">
+
+
+
+
+        <sub><b>Saigon University (SGU)</b></sub>
+      </td>
+            <td align="center" width="140">
+        <img src="./asset/1.jpg" alt="Amazon Web Services (AWS)" width="110">
+
+
+
+
+        <sub><b>Amazon Web Services</b></sub>
+      </td>
+            <td align="center" width="140">
+        <img src="./asset/4.png" alt="Distributed DB Model" width="110">
+
+
+
+
+        <sub><b>Distributed DB Model</b></sub>
+      </td>
+    </tr>
+  </table>
+
+
+
+
+  <img src="[https://img.shields.io/badge/status-in%20progress-yellow](https://img.shields.io/badge/status-in%20progress-yellow)" />
+
+  <hr style="width:60%; border: 1px solid #eee;">
+
+    <p>
+    📚 <b>Faculty of Information Technology</b> • Saigon University (SGU) 
+
+
+
+
+    🧪 Subject: <b>Distributed Database Systems</b> • Practical Module
+  </p>
+
 </div>
 
 ---
 
-## 📚 MỤC LỤC
+## 📚 TABLE OF CONTENTS
 
-- [🚀 Giới thiệu tổng quan](#-giới-thiệu-tổng-quan)
-- [🏆 Thành tích nổi bật](#-thành-tích-nổi-bật)
-- [📂 Cấu trúc nội dung repo](#-cấu-trúc-nội-dung-repo)
-- [🎯 Mục tiêu của repo](#-mục-tiêu-của-repo)
-- [🌐✨ Liên kết tài nguyên](#-liên-kết-tài-nguyên)
-- [🏫 Thông tin chung](#-thông-tin-chung)
-- [📘 Tổng quan về đồ án lớp DCT122C3](#2-tổng-quan-về-đồ-án-lớp-dct122c3)
-  - [🧩 Phần 1 – Đồ án chung (SQL Server – Hệ thống quản lý quỹ)](#-phần-1--đồ-án-chung-sql-server--hệ-thống-quản-lý-quỹ)
-  - [💡 Phần 2 – Đồ án riêng (Chuyên đề mở rộng CSDL phân tán)](#-phần-2--đồ-án-riêng-chuyên-đề-mở-rộng-csdl-phân-tán)
-- [🗃️ Tóm tắt Đồ án chung – SQL Server](#4-tóm-tắt-đồ-án-chung--sql-server-fundmanagement)
-- [🧠 Đồ án riêng – Hadoop & MapReduce](#5-đồ-án-riêng--hadoop--mapreduce-)
-- [🔄 Liên hệ giữa hai phần](#liên-hệ-giữa-hai-phần)
-- [🏁 Kết quả & Đánh giá](#kết-quả--đánh-giá)
-- [👨‍💻 Tác giả](#tác-giả)
-- [⚖️ License](#license)
-
----
-
-# 📘 ĐỒ ÁN CƠ SỞ DỮ LIỆU PHÂN TÁN & KHO TÀI LIỆU CHUYÊN SÂU MÔN CSDL PHÂN TÁN – SGU  
-> Tổng hợp và hệ thống hóa kiến thức – từ **lý thuyết phân tán** đến **triển khai thực tế**.
+* [🚀 Overview Introduction](https://www.google.com/search?q=%23-overview-introduction)
+* [🏆 Outstanding Achievements](https://www.google.com/search?q=%23-outstanding-achievements)
+* [📂 Repo Content Structure](https://www.google.com/search?q=%23-repo-content-structure)
+* [🎯 Repo Objectives](https://www.google.com/search?q=%23-repo-objectives)
+* [🌐✨ Resource Links](https://www.google.com/search?q=%23-resource-links)
+* [🏫 General Information](https://www.google.com/search?q=%23-general-information)
+* [📘 Overview of Class DCT122C3 Project](https://www.google.com/search?q=%232-overview-of-class-dct122c3-project)
+  - [🧩 Part 1 – General Project (SQL Server – Fund Management System)](https://www.google.com/search?q=%23-part-1--general-project-sql-server--fund-management-system)
+  - [💡 Part 2 – Individual Project (Advanced Distributed DB Topics)](https://www.google.com/search?q=%23-part-2--individual-project-advanced-distributed-db-topics)
+* [🗃️ General Project Summary – SQL Server](https://www.google.com/search?q=%234-general-project-summary--sql-server-fundmanagement)
+* [🧠 Individual Project – Hadoop & MapReduce](https://www.google.com/search?q=%235-individual-project--hadoop--mapreduce-)
+* [🔄 Connection between Parts](https://www.google.com/search?q=%236-connection-between-two-parts)
+* [🏁 Results & Evaluation](https://www.google.com/search?q=%237-results--evaluation)
+* [👨‍💻 Authors](https://www.google.com/search?q=%238-authors)
+* [⚖️ License](https://www.google.com/search?q=%239-license)
 
 ---
 
-## 🧩 Giới thiệu tổng quan
+# 📘 DISTRIBUTED DATABASE SYSTEMS PROJECT & SPECIALIZED RESOURCE REPOSITORY – SGU  
 
-Đây là **tài liệu và đồ án tổng hợp** cho môn *Cơ Sở Dữ Liệu Phân Tán* của **lớp DCT122C3 – Đại học Sài Gòn (SGU)**.  
-Repo này được biên soạn dựa trên **kinh nghiệm thực hành – nghiên cứu – triển khai** từ các nguồn **trong nước và quốc tế**, nhằm mang đến **một góc nhìn vừa sâu về lý thuyết, vừa chi tiết về thực tế triển khai**.
-
----
-
-## 🏆 Thành tích nổi bật
-
-✨ **Nhóm 11 (Trương Phú Kiệt – Trà Đức Toàn)** đạt **điểm 9.5/10**,  
-là **điểm cao nhất lớp DCT122C3**, với phần **đồ án riêng Hadoop & MapReduce** – được đánh giá xuất sắc về:
-- ✅ **Hiểu rõ cơ chế hoạt động của Hadoop Ecosystem (HDFS, YARN, MapReduce)**.  
-- ⚙️ **Triển khai thực tế cluster phân tán trên local, Docker và AWS Cloud.**  
-- 💡 **Phân tích – so sánh – đánh giá hiệu năng dựa trên lý thuyết và thực nghiệm.**
+> Synthesizing and systematizing knowledge – from **distributed theory** to **practical deployment**.
 
 ---
 
-## 📂 Cấu trúc nội dung repo
+## 🧩 Overview Introduction
 
-> Repo này kết hợp **3 tài liệu trọng tâm**, được chọn lọc và tái biên soạn nhằm giúp người đọc  
-> **vừa nắm chắc lý thuyết phân tán**, **vừa có thể tự triển khai thực hành** theo từng bước.
-
-1. **🗃️ Đồ án chung CSDLPT** – *Hệ thống Quản lý Quỹ*  
-   - Xây dựng hệ thống **phân mảnh – replication – đồng bộ dữ liệu** bằng **SQL Server**.  
-   - Phần này mô phỏng một hệ thống tài chính thực tế, phân tán theo loại quỹ và mức rủi ro.  
-
-2. **🧠 Đồ án riêng – Hadoop & MapReduce**  
-   - Nghiên cứu và triển khai **xử lý dữ liệu lớn phân tán** trên **Hadoop Cluster**.  
-   - Bao gồm cả **WordCount Demo**, **HDFS CLI**, **YARN job monitoring**, **Docker** & **AWS Deployment**.  
-   - Là **đề tài được đánh giá cao nhất lớp (9.5/10)**.  
-
-3. **🎞️ Slide thuyết trình tổng hợp**  
-   - Hệ thống hóa toàn bộ kiến thức từ **HDFS – YARN – MapReduce – SQL Replication**.  
-   - Giúp người đọc nắm được mối quan hệ giữa **CSDL phân tán truyền thống và Big Data hiện đại**.
+This is the **comprehensive documentation and project** for the *Distributed Database Systems* subject of **Class DCT122C3 – Saigon University (SGU)**.  
+This repo is compiled based on **practical experience – research – deployment** from both **domestic and international sources**, aiming to provide **a perspective that is deep in theory and detailed in practical deployment**.
 
 ---
 
-## 🎯 Mục tiêu của repo
+## 🏆 Outstanding Achievements
 
-- Cung cấp **tài liệu chi tiết về cách cài đặt, cấu hình, và triển khai hệ thống CSDL phân tán**.  
-- Giúp sinh viên **hiểu sâu bản chất lý thuyết** (phân mảnh, đồng bộ, tính nhất quán, xử lý song song).  
-- Làm cầu nối giữa **kiến thức học thuật SGU** và **ứng dụng thực tiễn trong ngành IT**.  
-- Trở thành **nguồn tham khảo toàn diện** cho các bạn học cùng khóa hoặc sinh viên nghiên cứu về CSDL phân tán.
+✨ **Group 11 (Truong Phu Kiet – Tra Duc Toan)** achieved a **score of 9.5/10**,  
+which is the **highest score in class DCT122C3**, with the **Individual Project on Hadoop & MapReduce** – evaluated as excellent in:
+
+* ✅ **Clearly understanding the operation mechanism of the Hadoop Ecosystem (HDFS, YARN, MapReduce)**.  
+* ⚙️ **Practical deployment of distributed clusters on local, Docker, and AWS Cloud environments.**  
+* 💡 **Analysis – Comparison – Performance evaluation based on theory and experiments.**
+
+---
+
+## 📂 Repo Content Structure
+
+> This repo combines **3 core documents**, selected and re-edited to help readers  
+> **firmly grasp distributed theory** while being able to **self-deploy practically** step-by-step.
+
+1. **🗃️ General Project (Distributed DB)** – *Fund Management System*  
+   - Building a **fragmentation – replication – data synchronization** system using **SQL Server**.  
+   - This part simulates a real-world financial system, distributed by fund type and risk level.  
+2. **🧠 Individual Project – Hadoop & MapReduce**  
+   - Research and deployment of **distributed big data processing** on a **Hadoop Cluster**.  
+   - Includes **WordCount Demo**, **HDFS CLI**, **YARN job monitoring**, **Docker** & **AWS Deployment**.  
+   - This is the **highest-rated topic in the class (9.5/10)**.  
+3. **🎞️ Comprehensive Presentation Slides**  
+   - Systematizing all knowledge from **HDFS – YARN – MapReduce – SQL Replication**.  
+   - Helping readers understand the relationship between **traditional distributed databases and modern Big Data**.
 
 ---
 
-> 💬 *“Chúng tôi không chỉ chạy được chương trình – mà còn hiểu sâu lý do vì sao nó chạy được.”*  
-> — **Nhóm 11, Lớp DCT122C3, Đại học Sài Gòn**
+## 🎯 Repo Objectives
+
+* Provide **detailed documentation on installation, configuration, and deployment of distributed database systems**.  
+* Help students **deeply understand theoretical nature** (fragmentation, synchronization, consistency, parallel processing).  
+* Act as a bridge between **SGU academic knowledge** and **practical applications in the IT industry**.  
+* Become a **comprehensive reference source** for classmates or students researching distributed databases.
 
 ---
-## 🌐✨ Liên kết tài nguyên
+
+> 💬 *“We don't just run the program – we deeply understand why it runs.”*  
+> — **Group 11, Class DCT122C3, Saigon University**
+
+---
+
+## 🌐✨ Resource Links
 
 <div align="center">
 
-🎓 **Tài liệu học phần – Cơ Sở Dữ Liệu Phân Tán (Lớp DCT122C3 – Đại học Sài Gòn)**  
+🎓 **Course Materials – Distributed Database Systems (Class DCT122C3 – Saigon University)**  
 
 <h2 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Poppins&size=28&pause=1000&color=00B4D8&width=500&lines=🔗+Liên+kết+tài+nguyên;Kho+tài+liệu+huyền+thoại+DCT122C3;CSDL+Phân+Tán+–+Đại+học+Sài+Gòn" alt="Typing SVG" />
+  <img 
+    src="https://readme-typing-svg.demolab.com?font=Poppins&size=28&pause=1000&color=00B4D8&width=500&lines=🔗+Resource+Links;Legendary+DCT122C3+Repository;Distributed+DB+–+Saigon+University"
+    alt="Typing SVG"
+  />
 </h2>
 
+
 ---
 
-## 💾 Kho tài liệu huyền thoại – DCT122C3 📚
+## 💾 Legendary Resource Repository – DCT122C3 📚
 
-Bạn có bao giờ muốn **xem toàn bộ đồ án, slide và báo cáo** của một lớp *Cơ sở dữ liệu phân tán* đầy đủ nhất chưa?  
-Từ những bài cài đặt **SQL Server Replication** chi tiết, cho đến các đề tài đặc biệt như  
+Have you ever wanted to **see all projects, slides, and reports** of a Distributed Database class in the most complete way?  
+From detailed **SQL Server Replication** installation guides to special topics like  
 **Hadoop – MapReduce, Talend, PostgreSQL, Oracle, MySQL, Blockchain...**
 
-> Tất cả được nhóm lại trong **một thư mục Google Drive duy nhất** –  
-> nơi chứa đựng “**kho tri thức thực chiến**” của cả lớp DCT122C3 – Đại học Sài Gòn 💡  
+> All gathered in **a single Google Drive folder** –  
+> holding the “**practical knowledge inventory**” of the entire class DCT122C3 – Saigon University 💡  
 
-📁 [![Google Drive](https://img.shields.io/badge/📂_Drive-Tài_liệu_lớp-blue?style=for-the-badge&logo=google-drive)](https://drive.google.com/drive/folders/1huLhz03fFSucvnEqQ9PsZSp-jgrxtE8J)
+📁 [](https://drive.google.com/drive/folders/1huLhz03fFSucvnEqQ9PsZSp-jgrxtE8J)
 
-💻 **GitHub cá nhân – Trương Phú Kiệt**  
-[![GitHub Profile](https://img.shields.io/badge/GitHub-Kietnehi-black?style=for-the-badge&logo=github)](https://github.com/Kietnehi)
-
----
-
-### 🧩 **Tổng hợp 9 đề tài nổi bật trong kho tài liệu**
-
-| 🔢 | 🧠 Chủ đề | 💡 Mô tả ngắn gọn |
-|:--:|:-----------|:------------------|
-| 🏛️ | **Đồ án chung – SQL Server Replication** | Xây dựng hệ thống **Quản lý Quỹ Phân Tán**, thiết kế **phân mảnh dữ liệu** theo RiskProfile & FundType, và triển khai **Merge Publication** giữa nhiều site. |
-| 1️⃣ | **Liên thông Oracle ↔ SQL Server** | Thiết lập **Linked Server** và **ODBC Connection** để trao đổi dữ liệu giữa 2 hệ quản trị CSDL khác nhau. |
-| 2️⃣ | **Liên thông MySQL ↔ SQL Server** | Kết nối chéo thông qua **MySQL Connector/ODBC**, tạo view tổng hợp liên hệ giữa 2 nền tảng. |
-| 3️⃣ | **Liên thông PostgreSQL ↔ MySQL** | Dùng **Foreign Data Wrapper (FDW)** trong PostgreSQL để truy xuất dữ liệu MySQL từ xa. |
-| 4️⃣ | **Di trú dữ liệu bằng Talend** | Thiết kế luồng **ETL (Extract – Transform – Load)** giữa các hệ thống CSDL khác nhau bằng công cụ **Talend Open Studio**. |
-| 5️⃣ | **Di trú dữ liệu khác cấu trúc lược đồ** | Chuyển đổi dữ liệu giữa các hệ thống **không tương thích schema**, kết hợp mapping tự động và chuẩn hóa dữ liệu. |
-| 6️⃣ | **Cơ sở dữ liệu phi tập trung (Decentralized DB)** | Tìm hiểu mô hình **blockchain database**, cơ chế đồng thuận và quản lý node phân tán. |
-| 7️⃣ | **Hadoop & MapReduce (Trương Phú Kiệt – điểm 9.5/10)** 🏆 | Triển khai **HDFS – YARN – MapReduce**, thực nghiệm **WordCount** trên cluster local, Docker & AWS, đo hiệu năng theo node. |
-| 8️⃣ | **PostgreSQL Distributed System** | Cài đặt **PostgreSQL Cluster**, cấu hình **phân mảnh và đồng bộ dữ liệu** trên hệ thống quản lý quỹ. |
+💻 **Personal GitHub – Truong Phu Kiet**  
+[](https://github.com/Kietnehi)
 
 ---
 
-### 🎤 **Kho slide thuyết trình & tài liệu bổ trợ**
+### 🧩 **Summary of 9 Outstanding Topics in the Repository**
 
-Ngoài các file báo cáo chính, thư mục này còn bao gồm:
-- 🧱 **Slide đồ án chung:** giới thiệu tổng quan về hệ thống quản lý quỹ, kiến trúc phân tán, replication, và minh họa demo thực tế trên SQL Server.  
-- 💡 **Slide của 8 đề tài riêng:** mỗi đề tài có **slide trình bày + hướng dẫn cài đặt + ví dụ thực hành**.  
-- 🖼️ **Ảnh chụp kết quả thực nghiệm:** cấu hình replication, chạy job MapReduce, cấu trúc cluster Hadoop, v.v.  
-- 📘 **Tài liệu PDF & Word:** đầy đủ phần mô tả kỹ thuật, ERD, kịch bản phân tán, và lược đồ dữ liệu.  
+| 🔢 | 🧠 Topic | 💡 Brief Description |
+| --- | --- | --- |
+| 🏛️ | **General Project – SQL Server Replication** | Build a **Distributed Fund Management** system, design **data fragmentation** by RiskProfile & FundType, and deploy **Merge Publication** across multiple sites. |
+| 1️⃣ | **Interoperability Oracle ↔ SQL Server** | Set up **Linked Server** and **ODBC Connection** to exchange data between 2 different DBMS. |
+| 2️⃣ | **Interoperability MySQL ↔ SQL Server** | Cross-connect via **MySQL Connector/ODBC**, create consolidated views linking 2 platforms. |
+| 3️⃣ | **Interoperability PostgreSQL ↔ MySQL** | Use **Foreign Data Wrapper (FDW)** in PostgreSQL to access remote MySQL data. |
+| 4️⃣ | **Data Migration with Talend** | Design **ETL (Extract – Transform – Load)** flows between different DB systems using **Talend Open Studio**. |
+| 5️⃣ | **Schema-Mismatch Data Migration** | Convert data between **incompatible schema** systems, combining automatic mapping and data normalization. |
+| 6️⃣ | **Decentralized Database (Blockchain)** | Explore **blockchain database** models, consensus mechanisms, and distributed node management. |
+| 7️⃣ | **Hadoop & MapReduce (Truong Phu Kiet – Score 9.5/10)** 🏆 | Deploy **HDFS – YARN – MapReduce**, experiment **WordCount** on local, Docker & AWS clusters, measure performance by nodes. |
+| 8️⃣ | **PostgreSQL Distributed System** | Install **PostgreSQL Cluster**, configure **fragmentation and data synchronization** on the fund management system. |
 
 ---
 
-⭐ *Khám phá kho tài liệu này để hiểu sâu hơn về cách triển khai, phân mảnh và xử lý dữ liệu phân tán trong thực tế.*  
-> Một nguồn tham khảo quý giá cho mọi sinh viên IT đang học về **Cơ sở dữ liệu phân tán & Big Data** 🚀  
+### 🎤 **Presentation Slides & Supplementary Materials**
+
+In addition to the main report files, this folder includes:
+
+* 🧱 **General Project Slides:** Overview of the fund management system, distributed architecture, replication, and live demo illustrations on SQL Server.  
+* 💡 **Slides for 8 Individual Topics:** Each topic includes **presentation slides + installation guides + practical examples**.  
+* 🖼️ **Experimental Result Images:** Replication configuration, MapReduce job execution, Hadoop cluster structure, etc.  
+* 📘 **PDF & Word Documents:** Full technical descriptions, ERD, distributed scenarios, and data schemas.  
+
+---
+
+⭐ *Explore this repository to gain a deeper understanding of how to deploy, fragment, and process distributed data in reality.*  
+
+> A valuable reference for every IT student learning about **Distributed Databases & Big Data** 🚀  
 
 </div>
-
 
 ---
 
 <div align="center">
 
-<h2>🏫 <b>THÔNG TIN CHUNG</b></h2>
+<h2>🏫 <b>GENERAL INFORMATION</b></h2>
 
 <table border="0" cellspacing="0" cellpadding="6">
-  <tr>
-    <td align="left" style="font-size: 18px;">
-      <b>🏛️ Trường:</b> Trường Đại học Sài Gòn  
-    </td>
-  </tr>
-  <tr>
-    <td align="left" style="font-size: 18px;">
-      <b>💻 Khoa:</b> Công nghệ Thông tin  
-    </td>
-  </tr>
-  <tr>
-    <td align="left" style="font-size: 18px;">
-      <b>📘 Môn học:</b> Cơ sở dữ liệu phân tán  
-    </td>
-  </tr>
-  <tr>
-    <td align="left" style="font-size: 18px;">
-      <b>👨‍🏫 Giảng viên hướng dẫn:</b> <b>TS.Nguyễn Quốc Huy</b>  
-    </td>
-  </tr>
-  <tr>
-    <td align="left" style="font-size: 18px;">
-      <b>🧩 Lớp:</b> <b>DCT122C3</b>  
-    </td>
-  </tr>
-  <tr>
-    <td align="left" style="font-size: 18px;">
-      <b>👥 Nhóm thực hiện:</b> <b>Nhóm 11</b>  
-      <ul style="font-size: 17px; text-align: left;">
-        <li>Trà Đức Toàn – 3122411217</li>
-        <li>Trương Phú Kiệt – 3122411109</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td align="left" style="font-size: 18px;">
-      <b>🗓️ Thời gian:</b> <i>Thành phố Hồ Chí Minh, tháng 3 năm 2025</i>  
-    </td>
-  </tr>
+  <tr>
+    <td align="left" style="font-size: 18px;">
+      <b>🏛️ University:</b> Saigon University  
+    </td>
+  </tr>
+  <tr>
+    <td align="left" style="font-size: 18px;">
+      <b>💻 Faculty:</b> Information Technology  
+    </td>
+  </tr>
+  <tr>
+    <td align="left" style="font-size: 18px;">
+      <b>📘 Subject:</b> Distributed Database Systems  
+    </td>
+  </tr>
+  <tr>
+    <td align="left" style="font-size: 18px;">
+      <b>👨‍🏫 Instructor:</b> <b>Dr. Nguyen Quoc Huy</b>  
+    </td>
+  </tr>
+  <tr>
+    <td align="left" style="font-size: 18px;">
+      <b>🧩 Class:</b> <b>DCT122C3</b>  
+    </td>
+  </tr>
+  <tr>
+    <td align="left" style="font-size: 18px;">
+      <b>👥 Team:</b> <b>Group 11</b>  
+      <ul style="font-size: 17px; text-align: left;">
+        <li>Tra Duc Toan – 3122411217</li>
+        <li>Truong Phu Kiet – 3122411109</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td align="left" style="font-size: 18px;">
+      <b>🗓️ Date:</b> <i>Ho Chi Minh City, March 2025</i>  
+    </td>
+  </tr>
 </table>
 
 </div>
 
 ---
 
+## 2. Overview of Class DCT122C3 Project
 
-## 2. Tổng quan về đồ án lớp DCT122C3
+The entire class DCT122C3 is divided into **2 main project parts**:
 
-Cả lớp DCT122C3 được chia thành **2 phần đồ án chính**:
+### 🧩 Part 1 – General Project (SQL Server – Fund Management System)
 
-### 🧩 Phần 1 – Đồ án chung (SQL Server – Hệ thống quản lý quỹ)
+All students collaboratively implement a topic on **building a distributed database system using SQL Server**.  
+Including:
 
-Tất cả sinh viên đều cùng thực hiện một đề tài **xây dựng hệ thống CSDL phân tán bằng SQL Server**.  
-Bao gồm:
-- Thiết kế cơ sở dữ liệu **FundManagement**.
-- Cấu hình **Replication** (Publisher – Distributor – Subscriber).  
-- Phân mảnh dữ liệu theo **RiskProfile** (Low/Medium/High) hoặc **FundType**.
-- Triển khai trên nhiều instance SQL Server, thực hiện truy vấn phân tán.
+* Designing the **FundManagement** database.
+* Configuring **Replication** (Publisher – Distributor – Subscriber).  
+* Fragmenting data by **RiskProfile** (Low/Medium/High) or **FundType**.
+* Deploying on multiple SQL Server instances, executing distributed queries.
 
-### 💡 Phần 2 – Đồ án riêng (Chuyên đề mở rộng CSDL phân tán)
+### 💡 Part 2 – Individual Project (Advanced Distributed DB Topics)
 
-Mỗi nhóm chọn một chủ đề nâng cao để nghiên cứu riêng.  
-Danh sách các chủ đề của lớp gồm:
+Each group selects an advanced topic for separate research.  
+The list of topics for the class includes:
 
-1. Liên thông Database **Oracle ↔ SQL Server**  
-2. Liên thông **MySQL ↔ SQL Server**  
-3. Liên thông **PostgreSQL ↔ MySQL**  
-4. **Di trú dữ liệu** sử dụng **Talend**  
-5. Di trú dữ liệu **khác cấu trúc lược đồ**  
-6. **Cơ sở dữ liệu phi tập trung (Blockchain Database)**  
-7. **Hadoop & MapReduce** 🏆 *(Chủ đề của Trương Phú Kiệt và Trà Đức Toàn – đạt điểm cao nhất lớp: **9.5/10**)*
-8. **Phân tán dữ liệu trong PostgreSQL** (trên hệ thống quản lý quỹ)
-
----
-
-## 3. Mục tiêu README
-
-README này được tạo ra để:
-1. Gom toàn bộ nội dung đồ án chung và đồ án riêng trong **một tài liệu duy nhất**.  
-2. Tái hiện **cấu trúc thư mục**, **cách triển khai**, **lệnh chạy** và **giải thích logic phân tán**.  
-3. Phục vụ cho việc **đưa lên GitHub** hoặc **nộp file tổng hợp** cho giảng viên.
+1. Interoperability Database **Oracle ↔ SQL Server**  
+2. Interoperability **MySQL ↔ SQL Server**  
+3. Interoperability **PostgreSQL ↔ MySQL**  
+4. **Data Migration** using **Talend**  
+5. Data Migration **between Different Schemas**  
+6. **Decentralized Database (Blockchain Database)**  
+7. **Hadoop & MapReduce** 🏆 *(Topic of Truong Phu Kiet and Tra Duc Toan – achieved highest score: **9.5/10**)*
+8. **Data Distribution in PostgreSQL** (on the fund management system)
 
 ---
 
+## 3. Repo Objectives
 
+This README is created to:
 
-## 4. Tóm tắt Đồ án chung – SQL Server (FundManagement)
-
-### 🎯 Mục tiêu
-Xây dựng hệ thống **FundManagement** phục vụ việc quản lý quỹ đầu tư,  
-sau đó **phân tán dữ liệu** qua nhiều site SQL Server để:
-- Giảm tải cho từng node.
-- Dự phòng dữ liệu khi lỗi.
-- Cho phép xử lý song song.
-
-### ⚙️ Phân mảnh và Replication
-- **Phân mảnh bảng `Clients`** theo `RiskProfile` (`Low`, `Medium`, `High`).  
-- **Phân mảnh bảng `Funds`** theo `FundType` (`Equity`, `Bond`, `Mixed`).  
-- **Replication dạng Merge Publication** để đồng bộ 2 chiều.  
-- **Linked Server** dùng để hợp nhất truy vấn toàn cục.
+1. Combine all content of the general project and individual project into **a single document**.  
+2. Recreate the **folder structure**, **deployment method**, **execution commands**, and **explain the distributed logic**.  
+3. Serve the purpose of **uploading to GitHub** or **submitting the compiled file** to the lecturer.
 
 ---
 
-## 5. Đồ án riêng – Hadoop & MapReduce 🧠  
+## 4. General Project Summary – SQL Server (FundManagement)
 
-> **Chủ đề của Trương Phú Kiệt – đạt điểm 9.5/10 (cao nhất lớp).**
+### 🎯 Objectives
 
-### 🔍 Mục tiêu
-Tìm hiểu cơ chế lưu trữ và xử lý dữ liệu phân tán trên **Hadoop Ecosystem**,  
-bao gồm **HDFS**, **YARN** và **MapReduce**,  
-so sánh hiệu năng giữa các môi trường **local, Docker, AWS**.
+Build a **FundManagement** system to serve investment fund management,  
+then **distribute data** across multiple SQL Server sites to:
 
-### ⚡ Thực nghiệm chính
-- Viết chương trình **WordCount**.
-- Triển khai 4 môi trường:
-  1. Python tuần tự  
-  2. Hadoop Single Node  
-  3. Hadoop Docker 3 Node  
-  4. Hadoop AWS Cluster  
-- Kết quả: **số node càng nhiều → tốc độ xử lý càng nhanh**.
+* Reduce load for each node.
+* Provide data redundancy in case of failure.
+* Allow parallel processing.
 
-### 📦 Các lệnh cơ bản HDFS
+### ⚙️ Fragmentation and Replication
+
+* **Fragmenting the `Clients` table** by `RiskProfile` (`Low`, `Medium`, `High`).  
+* **Fragmenting the `Funds` table** by `FundType` (`Equity`, `Bond`, `Mixed`).  
+* **Replication type: Merge Publication** for 2-way synchronization.  
+* **Linked Server** used to consolidate global queries.
+
+---
+
+## 5. Individual Project – Hadoop & MapReduce 🧠  
+
+> **Topic of Truong Phu Kiet – achieved score 9.5/10 (highest in class).**
+
+### 🔍 Objectives
+
+Understand the storage and distributed processing mechanisms on the **Hadoop Ecosystem**,  
+including **HDFS**, **YARN**, and **MapReduce**,  
+compare performance between **local, Docker, and AWS** environments.
+
+### ⚡ Main Experiments
+
+* Writing a **WordCount** program.
+* Deploying 4 environments:
+  1. Sequential Python  
+  2. Hadoop Single Node  
+  3. Hadoop Docker 3 Node  
+  4. Hadoop AWS Cluster  
+* Result: **The more nodes → the faster the processing speed**.
+
+### 📦 Basic HDFS Commands
+
 ```bash
 hdfs dfs -mkdir /input
 hdfs dfs -put data.txt /input
 hadoop jar hadoop-mapreduce-examples-3.3.0.jar wordcount /input /output
 hdfs dfs -cat /output/part-r-00000
+
 ```
 
 ---
 
-## 🔄 6. Liên hệ giữa hai phần
+## 🔄 6. Connection between Two Parts
 
-| ⚙️ **So sánh** | 🧩 **SQL Server (Replication)** | ☁️ **Hadoop (MapReduce)** |
-|:---------------|:-------------------------------|:--------------------------|
-| 🎯 **Mục tiêu** | Phân tán dữ liệu nghiệp vụ | Phân tán xử lý dữ liệu lớn |
-| 🧠 **Cơ chế hoạt động** | Publisher → Distributor → Subscriber | HDFS → YARN → MapReduce |
-| 🗂️ **Loại dữ liệu** | Có cấu trúc, giao dịch | Phi cấu trúc, log, văn bản lớn |
-| ⏱️ **Đồng bộ** | Gần real-time / Replication liên tục | Batch Processing theo Job |
-| 💻 **Ngôn ngữ / Công cụ** | SQL / T-SQL, Linked Server, Replication Agent | Java / Python, HDFS CLI, Yarn ResourceManager |
-| 💼 **Ứng dụng thực tế** | Quản lý quỹ, ngân hàng, hệ thống ERP | Phân tích log, Big Data, Machine Learning, ETL |
+| ⚙️ **Comparison** | 🧩 **SQL Server (Replication)** | ☁️ **Hadoop (MapReduce)** |
+| --- | --- | --- |
+| 🎯 **Goal** | Distribute business data | Distribute big data processing |
+| 🧠 **Mechanism** | Publisher → Distributor → Subscriber | HDFS → YARN → MapReduce |
+| 🗂️ **Data Type** | Structured, transactional | Unstructured, logs, large text |
+| ⏱️ **Synchronization** | Near real-time / Continuous Replication | Batch Processing by Job |
+| 💻 **Language / Tool** | SQL / T-SQL, Linked Server, Replication Agent | Java / Python, HDFS CLI, Yarn ResourceManager |
+| 💼 **Practical App** | Fund management, banking, ERP systems | Log analysis, Big Data, Machine Learning, ETL |
 
-> 🧩 Cả hai mô hình đều **thuộc lĩnh vực phân tán**, nhưng mục tiêu khác nhau:  
-> - **SQL Server** → hướng tới **tính nhất quán và đồng bộ dữ liệu nghiệp vụ**.  
-> - **Hadoop** → tối ưu **xử lý dữ liệu lớn song song và chịu lỗi**.
-
----
-
-## 🏁 7. Kết quả & Đánh giá
-
-### 🎓 **Đồ án chung – SQL Server (Quản lý Quỹ Phân Tán)**
-- ✅ Hoàn thiện **thiết kế CSDL & phân mảnh** (RiskProfile, FundType).  
-- 🔁 Cấu hình **Merge Replication** giữa nhiều server instance.  
-- 🧩 Thực hiện **linked server queries** để hợp nhất dữ liệu toàn hệ thống.  
-- 🧠 Kết quả: **chạy ổn định, đồng bộ dữ liệu nhanh, không lỗi transaction.**
-
-### ⚡ **Đồ án riêng – Hadoop & MapReduce (Trương Phú Kiệt)**
-- ⚙️ Cài đặt thành công **cluster Hadoop** (local → Docker → AWS).  
-- 🧾 Chạy và so sánh hiệu năng bài toán **WordCount** trên nhiều môi trường.  
-- 📊 Kết quả thực nghiệm: **số node càng nhiều → tốc độ xử lý càng cao.**  
-- 🏆 **Điểm đánh giá: 9.5 / 10 – Cao nhất lớp DCT122C3.**
+> 🧩 Both models **belong to the distributed field**, but have different goals:  
+> * **SQL Server** → aims for **consistency and business data synchronization**.  
+> * **Hadoop** → optimizes for **parallel big data processing and fault tolerance**.
+> 
+> 
 
 ---
 
-## 👨‍💻 8. Tác giả
+## 🏁 7. Results & Evaluation
 
-| 🧑‍🎓 Thành viên | 🎯 Mã số sinh viên | 📬 Liên hệ |
-|:----------------|:------------------|:-----------|
-| **Trà Đức Toàn** | 3122411217 | — |
-| **Trương Phú Kiệt** *(Chủ đề Hadoop & MapReduce)* | 3122411109 | [GitHub – Kietnehi](https://github.com/Kietnehi) |
+### 🎓 **General Project – SQL Server (Distributed Fund Management)**
 
-> 📚 **Lớp**: DCT122C3 – **Đại học Sài Gòn, Khoa CNTT**  
-> ✨ *Đồ án đạt điểm xuất sắc và được đánh giá cao về tính thực tiễn & trình bày.*
+* ✅ Completed **DB design & fragmentation** (RiskProfile, FundType).  
+* 🔁 Configured **Merge Replication** between multiple server instances.  
+* 🧩 Executed **linked server queries** to consolidate system-wide data.  
+* 🧠 Result: **runs stably, fast data synchronization, no transaction errors.**
+
+### ⚡ **Individual Project – Hadoop & MapReduce (Truong Phu Kiet)**
+
+* ⚙️ Successfully installed **Hadoop cluster** (local → Docker → AWS).  
+* 🧾 Ran and compared performance of the **WordCount** problem on multiple environments.  
+* 📊 Experimental result: **The more nodes → the higher the processing speed.**  
+* 🏆 **Evaluation Score: 9.5 / 10 – Highest in class DCT122C3.**
+
+---
+
+## 👨‍💻 8. Authors
+
+| 🧑‍🎓 Member | 🎯 Student ID | 📬 Contact |
+| --- | --- | --- |
+| **Tra Duc Toan** | 3122411217 | — |
+| **Truong Phu Kiet** *(Hadoop & MapReduce Topic)* | 3122411109 | [GitHub – Kietnehi](https://github.com/Kietnehi) |
+
+> 📚 **Class**: DCT122C3 – **Saigon University, Faculty of IT**  
+> ✨ *The project achieved an excellent score and was highly appreciated for its practicality & presentation.*
 
 ---
 
 ## ⚖️ 9. License
 
-📖 Tài liệu này được biên soạn nhằm mục đích **học tập và chia sẻ kiến thức** trong môn *Cơ Sở Dữ Liệu Phân Tán* tại **Đại học Sài Gòn**.  
-Bạn có thể **sử dụng, trích dẫn hoặc cải tiến** với mục đích học thuật.  
+📖 This document is compiled for **learning and knowledge sharing purposes** in the *Distributed Database Systems* subject at **Saigon University**.  
+You may **use, cite, or improve** it for academic purposes.  
 
-> 💡 Hãy giữ lại tên tác giả khi trích dẫn để tôn trọng công sức học tập của nhóm.
+> 💡 Please keep the author's name when citing to respect the group's learning efforts.
 
 ---
 
 <div align="center">
-  
-✨ *“Phân tán dữ liệu – Kết nối tri thức.”* ✨  
+  
+✨ *“Distributing Data – Connecting Knowledge.”* ✨  
 
 </div>

@@ -74,10 +74,11 @@
   - [💡 Phần 2 – Đồ án riêng (Chuyên đề mở rộng CSDL phân tán)](#-phần-2--đồ-án-riêng-chuyên-đề-mở-rộng-csdl-phân-tán)
 - [🗃️ Tóm tắt Đồ án chung – SQL Server](#4-tóm-tắt-đồ-án-chung--sql-server-fundmanagement)
 - [🧠 Đồ án riêng – Hadoop & MapReduce](#5-đồ-án-riêng--hadoop--mapreduce-)
-- [🔄 Liên hệ giữa hai phần](#liên-hệ-giữa-hai-phần)
-- [🏁 Kết quả & Đánh giá](#kết-quả--đánh-giá)
-- [👨‍💻 Tác giả](#tác-giả)
-- [⚖️ License](#license)
+- [� Triển khai Hadoop Cluster trên Docker](#6-triển-khai-hadoop-cluster-trên-docker-hadoop-cluster-docker)
+- [🔄 Liên hệ giữa hai phần](#7-liên-hệ-giữa-hai-phần)
+- [🏁 Kết quả & Đánh giá](#8-kết-quả--đánh-giá)
+- [👨‍💻 Tác giả](#9-tác-giả)
+- [⚖️ License](#10-license)
 
 ---
 
@@ -161,6 +162,9 @@ Từ những bài cài đặt **SQL Server Replication** chi tiết, cho đến 
 
 💻 **GitHub cá nhân – Trương Phú Kiệt**  
 [![GitHub Profile](https://img.shields.io/badge/GitHub-Kietnehi-black?style=for-the-badge&logo=github)](https://github.com/Kietnehi)
+
+🐳 **Hadoop Cluster Docker – Tài liệu chi tiết**  
+[![Hadoop Docker](https://img.shields.io/badge/📖_Hadoop_Docker_Cluster-Đọc_tài_liệu-blue?style=for-the-badge&logo=docker)](./hadoop-cluster-docker/README.md)
 
 ---
 
@@ -334,7 +338,135 @@ hdfs dfs -cat /output/part-r-00000
 
 ---
 
-## 🔄 6. Liên hệ giữa hai phần
+## 6. Triển khai Hadoop Cluster trên Docker (`hadoop-cluster-docker`)
+
+> **Phần mới thêm**: Triển khai cụm Hadoop phân tán bằng Docker để mô phỏng hệ thống xử lý dữ liệu lớn.
+
+### 🎯 Mục tiêu
+
+Triển khai một **Hadoop Distributed Cluster** sử dụng Docker containers, giúp:
+- **Mô phỏng môi trường phân tán thực tế** trên một máy tính duy nhất
+- **Tiết kiệm tài nguyên** so với việc dùng nhiều máy vật lý
+- **Dễ dàng scale** số lượng nodes (master + slaves)
+- **Nhanh chóng setup và teardown** môi trường thử nghiệm
+
+### 🏗️ Kiến trúc
+
+- **Phiên bản Hadoop**: 2.7.2
+- **Base Image**: Ubuntu 14.04 + OpenJDK 7
+- **Các thành phần**:
+  - **HDFS** (Hadoop Distributed File System) - lưu trữ phân tán
+  - **YARN** (Yet Another Resource Negotiator) - quản lý tài nguyên
+  - **MapReduce** - xử lý tính toán phân tán
+
+### 📦 Cấu trúc thư mục `hadoop-cluster-docker`
+
+```
+hadoop-cluster-docker/
+├── Dockerfile              # Build Hadoop Docker image
+├── build-image.sh          # Build script
+├── masternode.sh           # Khởi động cụm 1 node (master + 1 slave)
+├── start-container.sh      # Khởi động cụm N nodes
+├── resize-cluster.sh       # Thay đổi số lượng nodes
+├── config/                # Cấu hình Hadoop
+│   ├── core-site.xml      # Core Hadoop config
+│   ├── hdfs-site.xml      # HDFS config
+│   ├── mapred-site.xml    # MapReduce config
+│   ├── yarn-site.xml      # YARN config
+│   ├── slaves             # Danh sách slave nodes
+│   ├── hadoop-env.sh      # Environment variables
+│   ├── ssh_config         # SSH config
+│   ├── start-hadoop.sh    # Khởi động services
+│   └── run-wordcount.sh   # Demo WordCount
+├── bigfile.txt            # Dữ liệu mẫu
+└── LICENSE
+```
+
+### 🚀 Hướng dẫn sử dụng
+
+#### 1. Build Docker Image
+
+```bash
+cd hadoop-cluster-docker
+./build-image.sh
+```
+
+Tạo image `kiwenlau/hadoop:1.0` với Hadoop 2.7.2.
+
+#### 2. Khởi động cụm
+
+**Option A - Cụm đơn node (khuyến nghị cho người mới)**:
+```bash
+./masternode.sh
+```
+- NameNode UI: http://localhost:50070
+- ResourceManager UI: http://localhost:8088
+
+**Option B - Cụm đa node**:
+```bash
+./start-container.sh [N]  # N = tổng số nodes (1 master + N-1 slaves)
+```
+Ví dụ: `./start-container.sh 5` → 1 master + 4 slaves
+
+Sau khi vào master container, khởi động Hadoop:
+```bash
+./start-hadoop.sh
+```
+
+#### 3. Chạy WordCount Demo
+
+Bên trong master container:
+```bash
+./run-wordcount.sh
+```
+
+Script sẽ:
+- Upload `bigfile.txt` lên HDFS
+- Chạy MapReduce job WordCount
+- Hiển thị kết quả và thời gian thực thi
+
+### 🔧 Các lệnh HDFS thông dụng
+
+```bash
+# Liệt kê files
+hdfs dfs -ls /
+
+# Upload file
+hdfs dfs -put localfile.txt /input
+
+# Download file
+hdfs dfs -get /output/part-r-00000 .
+
+# Xem nội dung file
+hdfs dfs -cat /input/bigfile.txt
+
+# Tạo thư mục
+hdfs dfs -mkdir /mydir
+```
+
+### 📊 Kết quả thực nghiệm
+
+Triển khai thành công cụm Hadoop với nhiều cấu hình:
+- **Single Node**: 1 master + 1 slave
+- **Multi-Node Docker**: 1 master + 2, 3, 4 slaves
+- **AWS Deployment**: Triển khai trên cloud
+
+Kết quả WordCount cho thấy:
+- **Số node càng nhiều → tốc độ xử lý càng nhanh**
+- Hadoop tận dụng xử lý song song hiệu quả
+- HDFS phân phối dữ liệu tự động đến các DataNode
+
+### 🎯 Ứng dụng thực tế
+
+- **Xử lý log files** lớn từ web servers
+- **Phân tích dữ liệu** không cấu trúc (văn bản, clickstream)
+- **ETL pipelines** cho Big Data
+- **Machine Learning** trên tập dữ liệu phân tán
+- **Học tập và nghiên cứu** về hệ thống phân tán
+
+---
+
+## 7. Liên hệ giữa hai phần
 
 | ⚙️ **So sánh** | 🧩 **SQL Server (Replication)** | ☁️ **Hadoop (MapReduce)** |
 |:---------------|:-------------------------------|:--------------------------|
@@ -351,7 +483,7 @@ hdfs dfs -cat /output/part-r-00000
 
 ---
 
-## 🏁 7. Kết quả & Đánh giá
+## 8. Kết quả & Đánh giá
 
 ### 🎓 **Đồ án chung – SQL Server (Quản lý Quỹ Phân Tán)**
 - ✅ Hoàn thiện **thiết kế CSDL & phân mảnh** (RiskProfile, FundType).  
@@ -367,7 +499,7 @@ hdfs dfs -cat /output/part-r-00000
 
 ---
 
-## 👨‍💻 8. Tác giả
+## 9. Tác giả
 
 | 🧑‍🎓 Thành viên | 🎯 Mã số sinh viên | 📬 Liên hệ |
 |:----------------|:------------------|:-----------|
@@ -379,7 +511,7 @@ hdfs dfs -cat /output/part-r-00000
 
 ---
 
-## ⚖️ 9. License
+## 10. License
 
 📖 Tài liệu này được biên soạn nhằm mục đích **học tập và chia sẻ kiến thức** trong môn *Cơ Sở Dữ Liệu Phân Tán* tại **Đại học Sài Gòn**.  
 Bạn có thể **sử dụng, trích dẫn hoặc cải tiến** với mục đích học thuật.  

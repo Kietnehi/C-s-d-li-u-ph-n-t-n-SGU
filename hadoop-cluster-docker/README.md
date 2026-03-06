@@ -1,238 +1,277 @@
+
 # Hadoop Cluster Docker
 
-Cụm Hadoop phân tán dựa trên Docker cho mục đích học tập và phát triển.
+Docker-based distributed Hadoop cluster for learning and development purposes.
 
-## 📋 Tổng Quan
+## 📋 Overview
 
-Trong demo này, tôi triển khai một Hadoop Cluster bằng Docker để mô phỏng hệ thống xử lý dữ liệu phân tán. Cụm bao gồm một NameNode và nhiều DataNode, mỗi node chạy trong một container riêng biệt. Docker giúp khởi tạo nhanh, dễ cấu hình và tiết kiệm tài nguyên so với việc dùng nhiều máy vật lý.
+In this demo, I deploy a Hadoop Cluster using Docker to simulate a distributed data processing system. The cluster consists of a NameNode and multiple DataNodes, each running in a separate container. Docker allows for fast initialization, easy configuration, and resource savings compared to using multiple physical machines.
 
-Để minh họa khả năng xử lý song song của Hadoop, tôi sử dụng bài toán WordCount (đếm số lần xuất hiện của từng từ trong văn bản). Dữ liệu đầu vào được lưu trên HDFS, sau đó chương trình MapReduce sẽ chia nhỏ file, phân phối đến các DataNode để xử lý song song. Giai đoạn Map thực hiện tách và đếm từ, còn Reduce tổng hợp kết quả cuối cùng.
+To illustrate Hadoop's parallel processing capabilities, I use the WordCount problem (counting the occurrences of each word in a text). The input data is stored on HDFS, then the MapReduce program splits the file and distributes it to the DataNodes for parallel processing. The Map phase extracts and counts words, while the Reduce phase aggregates the final results.
 
-Kết quả cho thấy hệ thống có thể xử lý dữ liệu lớn hiệu quả, tận dụng nhiều node để tăng tốc độ tính toán và thể hiện rõ đặc trưng phân tán của Hadoop.
 
-## ✨ Tính Năng
 
-- **Cụm Hadoop Đa Node**: Triển khai cụm với 1 master node và nhiều slave nodes
-- **Cài Đặt Dễ Dàng**: Triển khai nhanh chóng với các shell scripts đơn giản
-- **Có Thể Mở Rộng**: Thay đổi kích thước cụm một cách linh hoạt
-- **Đã Được Cấu Hình Sẵn**: Hadoop 2.7.2 được cài đặt và cấu hình sẵn
-- **Ví Dụ WordCount**: Bao gồm ví dụ MapReduce sẵn sàng chạy
-- **Giao Diện Web UI**: Truy cập Hadoop NameNode và ResourceManager qua giao diện web
+The results show that the system can efficiently process large datasets, utilizing multiple nodes to accelerate computation and clearly demonstrating Hadoop's distributed nature.
 
-## 🏗️ Kiến Trúc
+## ✨ Features
 
-- **Phiên Bản Hadoop**: 2.7.2
+- **Multi-Node Hadoop Cluster**: Deploy a cluster with 1 master node and multiple slave nodes.
+- **Easy Setup**: Quick deployment with simple shell scripts.
+- **Scalable**: Flexibly resize the cluster.
+- **Pre-configured**: Hadoop 2.7.2 comes pre-installed and configured.
+- **WordCount Example**: Includes a ready-to-run MapReduce example.
+- **Web UI Access**: Access Hadoop NameNode and ResourceManager via web interfaces.
+
+## 🏗️ Architecture
+
+
+
+- **Hadoop Version**: 2.7.2
 - **Base Image**: Ubuntu 14.04
 - **Java**: OpenJDK 7
-- **Các Thành Phần**:
-  - HDFS (Hadoop Distributed File System - Hệ thống file phân tán)
-  - YARN (Yet Another Resource Negotiator - Quản lý tài nguyên)
+- **Components**:
+  - HDFS (Hadoop Distributed File System)
+  - YARN (Yet Another Resource Negotiator)
   - MapReduce
 
-## 📦 Yêu Cầu
+## 📦 Requirements
 
-- Docker đã được cài đặt trên hệ thống
-- Quyền sudo (hoặc thêm user vào docker group)
-- Khuyến nghị tối thiểu 4GB RAM
-- Kiến thức cơ bản về Hadoop và Docker
+- Docker installed on the system
+- Sudo privileges (or add user to the docker group)
+- Minimum 4GB RAM recommended
+- Basic knowledge of Hadoop and Docker
 
-## 🚀 Bắt Đầu Nhanh
+## 🚀 Quick Start
 
 ### 1. Build Docker Image
 
 ```bash
 ./build-image.sh
+
 ```
 
-Lệnh này sẽ tạo Docker image có tên `kiwenlau/hadoop:1.0` với Hadoop 2.7.2 đã được cài đặt sẵn.
+This command creates a Docker image named `kiwenlau/hadoop:1.0` with Hadoop 2.7.2 pre-installed.
 
-### 2. Khởi Động Cụm Đơn Node (Khuyến nghị cho người mới)
+### 2. Start Single-Node Cluster (Recommended for beginners)
 
 ```bash
 ./masternode.sh
+
 ```
 
-Lệnh này khởi động cụm Hadoop đơn node với các dịch vụ:
-- **NameNode UI**: http://localhost:50070
-- **ResourceManager UI**: http://localhost:8088
+This command starts a single-node Hadoop cluster with the following services:
 
-### 3. Khởi Động Cụm Đa Node
+* **NameNode UI**: http://localhost:50070
+* **ResourceManager UI**: http://localhost:8088
+
+### 3. Start Multi-Node Cluster
 
 ```bash
 ./start-container.sh [N]
+
 ```
 
-Trong đó `N` là tổng số nodes (mặc định là 3: 1 master + 2 slaves).
+Where `N` is the total number of nodes (default is 3: 1 master + 2 slaves).
 
-**Ví dụ**: Khởi động cụm 5 nodes (1 master + 4 slaves):
+**Example**: Start a 5-node cluster (1 master + 4 slaves):
+
 ```bash
 ./start-container.sh 5
+
 ```
 
-Sau khi chạy lệnh này, bạn sẽ ở bên trong container `hadoop-master`. Khởi động các dịch vụ Hadoop:
+After running this command, you will be inside the `hadoop-master` container. Start the Hadoop services:
 
 ```bash
 ./start-hadoop.sh
+
 ```
 
-### 4. Chạy Ví Dụ WordCount
+### 4. Run WordCount Example
 
-Bên trong master container, chạy:
+Inside the master container, run:
 
 ```bash
 ./run-wordcount.sh
-```
-
-Script này sẽ:
-- Hiển thị nội dung file đầu vào
-- Chạy job MapReduce WordCount trên `bigfile.txt`
-- Hiển thị kết quả
-- Hiển thị thời gian thực thi
-
-## 📂 Cấu Trúc Dự Án
 
 ```
+
+This script will:
+
+* Display the input file content
+* Run the MapReduce WordCount job on `bigfile.txt`
+* Display the results
+* Display the execution time
+
+## 📂 Project Structure
+
+```text
 .
-├── Dockerfile              # Định nghĩa Docker image
+├── Dockerfile              # Docker image definition
 ├── build-image.sh          # Build Hadoop Docker image
-├── masternode.sh           # Khởi động cụm đơn node
-├── start-container.sh      # Khởi động cụm đa node
-├── resize-cluster.sh       # Thay đổi kích thước cụm
-├── bigfile.txt            # File đầu vào mẫu cho WordCount
-├── config/                # Các file cấu hình Hadoop
-│   ├── core-site.xml      # Cấu hình core Hadoop
-│   ├── hdfs-site.xml      # Cấu hình HDFS
-│   ├── mapred-site.xml    # Cấu hình MapReduce
-│   ├── yarn-site.xml      # Cấu hình YARN
-│   ├── slaves             # Danh sách các slave nodes
-│   ├── hadoop-env.sh      # Biến môi trường Hadoop
-│   ├── ssh_config         # Cấu hình SSH
-│   ├── start-hadoop.sh    # Khởi động dịch vụ Hadoop
-│   └── run-wordcount.sh   # Script demo WordCount
+├── masternode.sh           # Start single-node cluster
+├── start-container.sh      # Start multi-node cluster
+├── resize-cluster.sh       # Resize the cluster
+├── bigfile.txt             # Sample input file for WordCount
+├── config/                 # Hadoop configuration files
+│   ├── core-site.xml       # Core Hadoop configuration
+│   ├── hdfs-site.xml       # HDFS configuration
+│   ├── mapred-site.xml     # MapReduce configuration
+│   ├── yarn-site.xml       # YARN configuration
+│   ├── slaves              # List of slave nodes
+│   ├── hadoop-env.sh       # Hadoop environment variables
+│   ├── ssh_config          # SSH configuration
+│   ├── start-hadoop.sh     # Start Hadoop services
+│   └── run-wordcount.sh    # WordCount demo script
 └── LICENSE
+
 ```
 
-## 🔧 Sử Dụng Nâng Cao
+## 🔧 Advanced Usage
 
-### Thay Đổi Kích Thước Cụm
+### Resize the Cluster
 
-Để thay đổi số lượng nodes trong cụm:
+To change the number of nodes in the cluster:
 
 ```bash
 ./resize-cluster.sh [N]
+
 ```
 
-Lệnh này sẽ:
-1. Cập nhật cấu hình slaves
-2. Rebuild Docker image
-3. Bạn cần khởi động lại containers với `./start-container.sh [N]`
+This command will:
 
-### Truy Cập Hadoop Web UIs
+1. Update the slaves configuration
+2. Rebuild the Docker image
+3. You will need to restart the containers with `./start-container.sh [N]`
 
-- **NameNode**: http://localhost:50070
-  - Xem trạng thái HDFS, duyệt hệ thống file, kiểm tra sức khỏe DataNode
-- **ResourceManager**: http://localhost:8088
-  - Giám sát các ứng dụng YARN, xem metrics của cụm
+### Access Hadoop Web UIs
 
-### Chạy MapReduce Jobs Tùy Chỉnh
+* **NameNode**: http://localhost:50070
+* View HDFS status, browse the file system, check DataNode health
 
-1. Copy file JAR vào master container:
+
+* **ResourceManager**: http://localhost:8088
+* Monitor YARN applications, view cluster metrics
+
+
+
+### Run Custom MapReduce Jobs
+
+1. Copy your JAR file into the master container:
+
 ```bash
 sudo docker cp yourapp.jar hadoop-master:/root/
+
 ```
 
-2. Thực thi bên trong container:
+2. Execute it inside the container:
+
 ```bash
 sudo docker exec -it hadoop-master bash
 hadoop jar yourapp.jar YourMainClass input output
+
 ```
 
-### Các Lệnh HDFS
+### HDFS Commands
 
-Các thao tác HDFS phổ biến bên trong master container:
+Common HDFS operations inside the master container:
 
 ```bash
-# Liệt kê files
+# List files
 hdfs dfs -ls /
 
-# Upload file
+# Upload a file
 hdfs dfs -put localfile.txt /path/in/hdfs
 
-# Download file
+# Download a file
 hdfs dfs -get /path/in/hdfs localfile.txt
 
-# Tạo thư mục
+# Create a directory
 hdfs dfs -mkdir /mydir
 
-# Xem nội dung file
+# View file content
 hdfs dfs -cat /path/to/file
+
 ```
 
-## 🛠️ Xử Lý Sự Cố
+## 🛠️ Troubleshooting
 
-### Container không khởi động được
+### Container fails to start
+
 ```bash
-# Kiểm tra các containers đang chạy
+# Check running containers
 sudo docker ps -a
 
-# Kiểm tra logs
+# Check logs
 sudo docker logs hadoop-master
+
 ```
 
-### Port đã được sử dụng
-Nếu ports 50070 hoặc 8088 đã được sử dụng, sửa port mappings trong startup scripts:
+### Port already in use
+
+If ports 50070 or 8088 are already in use, modify the port mappings in the startup scripts:
+
 ```bash
--p 50070:50070  # Đổi số đầu tiên thành port khả dụng
+-p 50070:50070  # Change the first number to an available port
 -p 8088:8088
+
 ```
 
-### Vấn đề về quyền
+### Permission issues
+
 ```bash
-# Sửa quyền SSH config
+# Fix SSH config permissions
 sudo chown $USER ~/.ssh/config
 sudo chmod 644 ~/.ssh/config
+
 ```
 
-### Vấn đề về mạng (cụm đa node)
-Đảm bảo Docker network đã được tạo:
+### Network issues (multi-node cluster)
+
+Ensure the Docker network is created:
+
 ```bash
 sudo docker network create --driver=bridge hadoop
+
 ```
 
-## 📝 Các File Cấu Hình
+## 📝 Configuration Files
 
-Các file cấu hình quan trọng trong thư mục `config/`:
+Important configuration files in the `config/` directory:
 
-- **core-site.xml**: Định nghĩa vị trí HDFS NameNode
-- **hdfs-site.xml**: Cài đặt HDFS (replication, block size)
-- **mapred-site.xml**: Cài đặt MapReduce framework
-- **yarn-site.xml**: Cấu hình YARN resource manager
-- **slaves**: Danh sách hostname của các slave nodes
+* **core-site.xml**: Defines the HDFS NameNode location
+* **hdfs-site.xml**: HDFS settings (replication, block size)
+* **mapred-site.xml**: MapReduce framework settings
+* **yarn-site.xml**: YARN resource manager configuration
+* **slaves**: List of slave node hostnames
 
-## 🎓 Tài Nguyên Học Tập
+## 🎓 Learning Resources
 
-Sau khi thiết lập cụm, bạn có thể:
-1. Khám phá hệ thống file HDFS
-2. Chạy các ví dụ MapReduce
-3. Giám sát jobs qua web UI
-4. Viết và kiểm thử các ứng dụng MapReduce của riêng bạn
-5. Hiểu các khái niệm điện toán phân tán
+After setting up the cluster, you can:
 
-## 🤝 Tác Giả
+1. Explore the HDFS file system
+2. Run MapReduce examples
+3. Monitor jobs via the web UI
+4. Write and test your own MapReduce applications
+5. Understand distributed computing concepts
 
-Dự án gốc bởi **KiwenLau** <kiwenlau@gmail.com>
+## 🤝 Author
 
-## 📄 Giấy Phép
+Original project by **KiwenLau** [kiwenlau@gmail.com](mailto:kiwenlau@gmail.com)
 
-Xem file [LICENSE](LICENSE) để biết chi tiết.
+## 📄 License
 
-## 🔗 Liên Kết Hữu Ích
+See the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.
 
-- [Tài Liệu Chính Thức Hadoop](https://hadoop.apache.org/docs/r2.7.2/)
-- [Tài Liệu Docker](https://docs.docker.com/)
-- [Kiến Trúc HDFS](https://hadoop.apache.org/docs/r2.7.2/hadoop-project-dist/hadoop-hdfs/HdfsDesign.html)
-- [Hướng Dẫn MapReduce](https://hadoop.apache.org/docs/r2.7.2/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html)
+## 🔗 Useful Links
+
+* [Official Hadoop Documentation](https://hadoop.apache.org/docs/r2.7.2/)
+* [Docker Documentation](https://docs.docker.com/)
+* [HDFS Architecture](https://hadoop.apache.org/docs/r2.7.2/hadoop-project-dist/hadoop-hdfs/HdfsDesign.html)
+* [MapReduce Tutorial](https://hadoop.apache.org/docs/r2.7.2/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html)
 
 ---
 
-**Lưu ý**: Cài đặt này được thiết kế cho mục đích phát triển và học tập. Đối với triển khai production, xem xét sử dụng các bản phân phối Hadoop doanh nghiệp với cấu hình bảo mật, giám sát và high availability phù hợp.
+**Note**: This setup is designed for development and learning purposes. For production deployments, consider using enterprise Hadoop distributions with appropriate security, monitoring, and high availability configurations.
+
+```

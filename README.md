@@ -7,11 +7,11 @@
 <p><i>Building, analyzing, and simulating distributed database systems on multiple platforms</i></p>
 
 <p>
-<img src="[https://img.shields.io/badge/University-SGU-blue?style=for-the-badge](https://img.shields.io/badge/University-SGU-blue?style=for-the-badge)">
-<img src="[https://img.shields.io/badge/Subject-Distributed%20Database-orange?style=for-the-badge](https://img.shields.io/badge/Subject-Distributed%20Database-orange?style=for-the-badge)">
-<img src="[https://img.shields.io/badge/Tech-Hadoop-yellow?style=for-the-badge&logo=apachehadoop](https://img.shields.io/badge/Tech-Hadoop-yellow?style=for-the-badge&logo=apachehadoop)">
-<img src="[https://img.shields.io/badge/DB-Microsoft%20SQL%20Server-red?style=for-the-badge&logo=microsoftsqlserver](https://img.shields.io/badge/DB-Microsoft%20SQL%20Server-red?style=for-the-badge&logo=microsoftsqlserver)">
-<img src="[https://img.shields.io/badge/Cloud-AWS-green?style=for-the-badge&logo=amazonaws](https://img.shields.io/badge/Cloud-AWS-green?style=for-the-badge&logo=amazonaws)">
+<img src="https://img.shields.io/badge/University-SGU-blue?style=for-the-badge">
+<img src="https://img.shields.io/badge/Subject-Distributed%20Database-orange?style=for-the-badge">
+<img src="https://img.shields.io/badge/Tech-Hadoop-yellow?style=for-the-badge&logo=apachehadoop">
+<img src="https://img.shields.io/badge/DB-Microsoft%20SQL%20Server-red?style=for-the-badge&logo=microsoftsqlserver">
+<img src="https://img.shields.io/badge/Cloud-AWS-green?style=for-the-badge&logo=amazonaws">
 </p>
 
 <table>
@@ -73,23 +73,23 @@
 
 ---
 
-## 📚 MỤC LỤC
+## 📚 TABLE OF CONTENTS
 
-- [🚀 Giới thiệu tổng quan](#-giới-thiệu-tổng-quan)
-- [🏆 Thành tích nổi bật](#-thành-tích-nổi-bật)
-- [📂 Cấu trúc nội dung repo](#-cấu-trúc-nội-dung-repo)
-- [🎯 Mục tiêu của repo](#-mục-tiêu-của-repo)
-- [🌐✨ Liên kết tài nguyên](#-liên-kết-tài-nguyên)
-- [🏫 Thông tin chung](#-thông-tin-chung)
-- [📘 Tổng quan về đồ án lớp DCT122C3](#2-tổng-quan-về-đồ-án-lớp-dct122c3)
-  - [🧩 Phần 1 – Đồ án chung (SQL Server – Hệ thống quản lý quỹ)](#-phần-1--đồ-án-chung-sql-server--hệ-thống-quản-lý-quỹ)
-  - [💡 Phần 2 – Đồ án riêng (Chuyên đề mở rộng CSDL phân tán)](#-phần-2--đồ-án-riêng-chuyên-đề-mở-rộng-csdl-phân-tán)
-- [🗃️ Tóm tắt Đồ án chung – SQL Server](#4-tóm-tắt-đồ-án-chung--sql-server-fundmanagement)
-- [🧠 Đồ án riêng – Hadoop & MapReduce](#5-đồ-án-riêng--hadoop--mapreduce-)
-- [🐳 Triển khai Hadoop Cluster trên Docker](#6-triển-khai-hadoop-cluster-trên-docker-hadoop-cluster-docker)
-- [🔄 Liên hệ giữa hai phần](#7-liên-hệ-giữa-hai-phần)
-- [🏁 Kết quả & Đánh giá](#8-kết-quả--đánh-giá)
-- [👨‍💻 Tác giả](#9-tác-giả)
+- [🚀 General Introduction](#-general-introduction)
+- [🏆 Key Achievements](#-key-achievements)
+- [📂 Repository Structure](#-repository-structure)
+- [🎯 Repository Goals](#-repository-goals)
+- [🌐✨ Resource Links](#-resource-links)
+- [🏫 General Information](#-general-information)
+- [📘 Class DCT122C3 Project Overview](#2-class-dct122c3-project-overview)
+  - [🧩 Part 1 – General Project (SQL Server – Fund Management System)](#-part-1--general-project-sql-server--fund-management-system)
+  - [💡 Part 2 – Specialized Project (Advanced Distributed DB Topics)](#-part-2--specialized-project-advanced-distributed-db-topics)
+- [🗃️ General Project Summary – SQL Server](#4-general-project-summary--sql-server-fundmanagement)
+- [🧠 Specialized Project – Hadoop & MapReduce](#5-specialized-project--hadoop--mapreduce-)
+- [🐳 Deploying Hadoop Cluster on Docker](#6-deploying-hadoop-cluster-on-docker-hadoop-cluster-docker)
+- [🔄 Connection Between Both Parts](#7-connection-between-both-parts)
+- [🏁 Results & Evaluation](#8-results--evaluation)
+- [👨‍💻 Authors](#9-authors)
 - [⚖️ License](#10-license)
 
 ---
@@ -115,11 +115,12 @@ This repo is compiled based on **practical experience, research, and deployment*
 which was the **highest score in class DCT122C3**, with the **Specialized Hadoop & MapReduce Project** – rated excellent for:
 
 * ✅ **Deep understanding of the Hadoop Ecosystem mechanisms (HDFS, YARN, MapReduce)**.
-* ⚙️ **Practical deployment of a distributed cluster on local machines, Docker, and AWS Cloud.** - 💡 **Analysis – Comparison – Performance evaluation based on theory and experimentation.**
+* ⚙️ **Practical deployment of a distributed cluster on local machines, Docker, and AWS Cloud.**
+* 💡 **Analysis – Comparison – Performance evaluation based on theory and experimentation.**
 
 ---
 
-## 📂 Repo Structure
+## 📂 Repository Structure
 
 > This repo combines **3 core documents**, selected and re-edited to help readers
 > **solidify theoretical knowledge** while **implementing practical steps**.
@@ -191,45 +192,8 @@ From detailed **SQL Server Replication** setup guides to advanced topics such as
 
 [![GitHub Profile](https://img.shields.io/badge/GitHub-Kietnehi-black?style=for-the-badge&logo=github)](https://github.com/Kietnehi)
 
-<<<<<<< HEAD
-🐳 **Hadoop Cluster Docker – Tài liệu chi tiết**  
-[![Hadoop Docker](https://img.shields.io/badge/📖_Hadoop_Docker_Cluster-Đọc_tài_liệu-blue?style=for-the-badge&logo=docker)](./hadoop-cluster-docker/README.md)
-
----
-
-### 🧩 **Tổng hợp 9 đề tài nổi bật trong kho tài liệu**
-
-| 🔢 | 🧠 Chủ đề | 💡 Mô tả ngắn gọn |
-|:--:|:-----------|:------------------|
-| 🏛️ | **Đồ án chung – SQL Server Replication** | Xây dựng hệ thống **Quản lý Quỹ Phân Tán**, thiết kế **phân mảnh dữ liệu** theo RiskProfile & FundType, và triển khai **Merge Publication** giữa nhiều site. |
-| 1️⃣ | **Liên thông Oracle ↔ SQL Server** | Thiết lập **Linked Server** và **ODBC Connection** để trao đổi dữ liệu giữa 2 hệ quản trị CSDL khác nhau. |
-| 2️⃣ | **Liên thông MySQL ↔ SQL Server** | Kết nối chéo thông qua **MySQL Connector/ODBC**, tạo view tổng hợp liên hệ giữa 2 nền tảng. |
-| 3️⃣ | **Liên thông PostgreSQL ↔ MySQL** | Dùng **Foreign Data Wrapper (FDW)** trong PostgreSQL để truy xuất dữ liệu MySQL từ xa. |
-| 4️⃣ | **Di trú dữ liệu bằng Talend** | Thiết kế luồng **ETL (Extract – Transform – Load)** giữa các hệ thống CSDL khác nhau bằng công cụ **Talend Open Studio**. |
-| 5️⃣ | **Di trú dữ liệu khác cấu trúc lược đồ** | Chuyển đổi dữ liệu giữa các hệ thống **không tương thích schema**, kết hợp mapping tự động và chuẩn hóa dữ liệu. |
-| 6️⃣ | **Cơ sở dữ liệu phi tập trung (Decentralized DB)** | Tìm hiểu mô hình **blockchain database**, cơ chế đồng thuận và quản lý node phân tán. |
-| 7️⃣ | **Hadoop & MapReduce (Trương Phú Kiệt – điểm 9.5/10)** 🏆 | Triển khai **HDFS – YARN – MapReduce**, thực nghiệm **WordCount** trên cluster local, Docker & AWS, đo hiệu năng theo node. |
-| 8️⃣ | **PostgreSQL Distributed System** | Cài đặt **PostgreSQL Cluster**, cấu hình **phân mảnh và đồng bộ dữ liệu** trên hệ thống quản lý quỹ. |
-
----
-
-### 🎤 **Kho slide thuyết trình & tài liệu bổ trợ**
-
-Ngoài các file báo cáo chính, thư mục này còn bao gồm:
-- 🧱 **Slide đồ án chung:** giới thiệu tổng quan về hệ thống quản lý quỹ, kiến trúc phân tán, replication, và minh họa demo thực tế trên SQL Server.  
-- 💡 **Slide của 8 đề tài riêng:** mỗi đề tài có **slide trình bày + hướng dẫn cài đặt + ví dụ thực hành**.  
-- 🖼️ **Ảnh chụp kết quả thực nghiệm:** cấu hình replication, chạy job MapReduce, cấu trúc cluster Hadoop, v.v.  
-- 📘 **Tài liệu PDF & Word:** đầy đủ phần mô tả kỹ thuật, ERD, kịch bản phân tán, và lược đồ dữ liệu.  
-
----
-
-⭐ *Khám phá kho tài liệu này để hiểu sâu hơn về cách triển khai, phân mảnh và xử lý dữ liệu phân tán trong thực tế.*  
-> Một nguồn tham khảo quý giá cho mọi sinh viên IT đang học về **Cơ sở dữ liệu phân tán & Big Data** 🚀  
-
-=======
->>>>>>> ef9263bc0ee71eaa62841a57c9ef634866ffe0c0
-</div>
-
+🐳 **Hadoop Cluster Docker – Detailed Documentation**  
+[![Hadoop Docker](https://img.shields.io/badge/📖_Hadoop_Docker_Cluster-Read_Documentation-blue?style=for-the-badge&logo=docker)](./hadoop-cluster-docker/README.md)
 
 ---
 
@@ -374,8 +338,14 @@ Each group selected an advanced topic for independent research.
 
 The list of topics for the class included:
 
-1. Database Interconnection **Oracle ↔ SQL Server** 2. Interconnection **MySQL ↔ SQL Server** 3. Interconnection **PostgreSQL ↔ MySQL** 4. **Data Migration** using **Talend** 5. Data Migration with **Heterogeneous Schemas** 6. **Decentralized Database (Blockchain Database)** 7. **Hadoop & MapReduce** 🏆 *(Topic by Truong Phu Kiet and Tra Duc Toan – achieved the highest score: **9.5/10**)*
-2. **Data Distribution in PostgreSQL** (on the fund management system)
+1. Database Interconnection **Oracle ↔ SQL Server**
+2. Interconnection **MySQL ↔ SQL Server**
+3. Interconnection **PostgreSQL ↔ MySQL**
+4. **Data Migration** using **Talend**
+5. Data Migration with **Heterogeneous Schemas**
+6. **Decentralized Database (Blockchain Database)**
+7. **Hadoop & MapReduce** 🏆 *(Topic by Truong Phu Kiet and Tra Duc Toan – achieved the highest score: **9.5/10**)*
+8. **Data Distribution in PostgreSQL** (on the fund management system)
 
 ---
 
@@ -446,52 +416,51 @@ hdfs dfs -cat /output/part-r-00000
 
 ---
 
-<<<<<<< HEAD
-## 6. Triển khai Hadoop Cluster trên Docker (`hadoop-cluster-docker`)
+## 6. Deploying Hadoop Cluster on Docker (`hadoop-cluster-docker`)
 
-> **Phần mới thêm**: Triển khai cụm Hadoop phân tán bằng Docker để mô phỏng hệ thống xử lý dữ liệu lớn.
+> **New Addition**: Deploying a distributed Hadoop cluster using Docker to simulate a big data processing system.
 
-### 🎯 Mục tiêu
+### 🎯 Objectives
 
-Triển khai một **Hadoop Distributed Cluster** sử dụng Docker containers, giúp:
-- **Mô phỏng môi trường phân tán thực tế** trên một máy tính duy nhất
-- **Tiết kiệm tài nguyên** so với việc dùng nhiều máy vật lý
-- **Dễ dàng scale** số lượng nodes (master + slaves)
-- **Nhanh chóng setup và teardown** môi trường thử nghiệm
+Deploy a **Hadoop Distributed Cluster** using Docker containers, enabling:
+- **Simulate a real distributed environment** on a single machine
+- **Save resources** compared to using multiple physical machines
+- **Easily scale** the number of nodes (master + slaves)
+- **Quick setup and teardown** of test environment
 
-### 🏗️ Kiến trúc
+### 🏗️ Architecture
 
-- **Phiên bản Hadoop**: 2.7.2
+- **Hadoop Version**: 2.7.2
 - **Base Image**: Ubuntu 14.04 + OpenJDK 7
-- **Các thành phần**:
-  - **HDFS** (Hadoop Distributed File System) - lưu trữ phân tán
-  - **YARN** (Yet Another Resource Negotiator) - quản lý tài nguyên
-  - **MapReduce** - xử lý tính toán phân tán
+- **Components**:
+  - **HDFS** (Hadoop Distributed File System) - distributed storage
+  - **YARN** (Yet Another Resource Negotiator) - resource management
+  - **MapReduce** - distributed computation processing
 
-### 📦 Cấu trúc thư mục `hadoop-cluster-docker`
+### 📦 `hadoop-cluster-docker` Directory Structure
 
 ```
 hadoop-cluster-docker/
 ├── Dockerfile              # Build Hadoop Docker image
 ├── build-image.sh          # Build script
-├── masternode.sh           # Khởi động cụm 1 node (master + 1 slave)
-├── start-container.sh      # Khởi động cụm N nodes
-├── resize-cluster.sh       # Thay đổi số lượng nodes
-├── config/                # Cấu hình Hadoop
+├── masternode.sh           # Start 1-node cluster (master + 1 slave)
+├── start-container.sh      # Start N-node cluster
+├── resize-cluster.sh       # Change number of nodes
+├── config/                # Hadoop configuration
 │   ├── core-site.xml      # Core Hadoop config
 │   ├── hdfs-site.xml      # HDFS config
 │   ├── mapred-site.xml    # MapReduce config
 │   ├── yarn-site.xml      # YARN config
-│   ├── slaves             # Danh sách slave nodes
+│   ├── slaves             # List of slave nodes
 │   ├── hadoop-env.sh      # Environment variables
 │   ├── ssh_config         # SSH config
-│   ├── start-hadoop.sh    # Khởi động services
+│   ├── start-hadoop.sh    # Start services
 │   └── run-wordcount.sh   # Demo WordCount
-├── bigfile.txt            # Dữ liệu mẫu
+├── bigfile.txt            # Sample data
 └── LICENSE
 ```
 
-### 🚀 Hướng dẫn sử dụng
+### 🚀 Usage Guide
 
 #### 1. Build Docker Image
 
@@ -500,44 +469,44 @@ cd hadoop-cluster-docker
 ./build-image.sh
 ```
 
-Tạo image `kiwenlau/hadoop:1.0` với Hadoop 2.7.2.
+Creates image `kiwenlau/hadoop:1.0` with Hadoop 2.7.2.
 
-#### 2. Khởi động cụm
+#### 2. Start Cluster
 
-**Option A - Cụm đơn node (khuyến nghị cho người mới)**:
+**Option A - Single node cluster (recommended for beginners)**:
 ```bash
 ./masternode.sh
 ```
 - NameNode UI: http://localhost:50070
 - ResourceManager UI: http://localhost:8088
 
-**Option B - Cụm đa node**:
+**Option B - Multi-node cluster**:
 ```bash
-./start-container.sh [N]  # N = tổng số nodes (1 master + N-1 slaves)
+./start-container.sh [N]  # N = total nodes (1 master + N-1 slaves)
 ```
-Ví dụ: `./start-container.sh 5` → 1 master + 4 slaves
+Example: `./start-container.sh 5` → 1 master + 4 slaves
 
-Sau khi vào master container, khởi động Hadoop:
+After entering master container, start Hadoop:
 ```bash
 ./start-hadoop.sh
 ```
 
-#### 3. Chạy WordCount Demo
+#### 3. Run WordCount Demo
 
-Bên trong master container:
+Inside master container:
 ```bash
 ./run-wordcount.sh
 ```
 
-Script sẽ:
-- Upload `bigfile.txt` lên HDFS
-- Chạy MapReduce job WordCount
-- Hiển thị kết quả và thời gian thực thi
+The script will:
+- Upload `bigfile.txt` to HDFS
+- Run MapReduce WordCount job
+- Display results and execution time
 
-### 🔧 Các lệnh HDFS thông dụng
+### 🔧 Common HDFS Commands
 
 ```bash
-# Liệt kê files
+# List files
 hdfs dfs -ls /
 
 # Upload file
@@ -546,39 +515,36 @@ hdfs dfs -put localfile.txt /input
 # Download file
 hdfs dfs -get /output/part-r-00000 .
 
-# Xem nội dung file
+# View file content
 hdfs dfs -cat /input/bigfile.txt
 
-# Tạo thư mục
+# Create directory
 hdfs dfs -mkdir /mydir
 ```
 
-### 📊 Kết quả thực nghiệm
+### 📊 Experimental Results
 
-Triển khai thành công cụm Hadoop với nhiều cấu hình:
+Successfully deployed Hadoop cluster with various configurations:
 - **Single Node**: 1 master + 1 slave
 - **Multi-Node Docker**: 1 master + 2, 3, 4 slaves
-- **AWS Deployment**: Triển khai trên cloud
+- **AWS Deployment**: Deployed on cloud
 
-Kết quả WordCount cho thấy:
-- **Số node càng nhiều → tốc độ xử lý càng nhanh**
-- Hadoop tận dụng xử lý song song hiệu quả
-- HDFS phân phối dữ liệu tự động đến các DataNode
+WordCount results show:
+- **More nodes → faster processing speed**
+- Hadoop effectively utilizes parallel processing
+- HDFS automatically distributes data to DataNodes
 
-### 🎯 Ứng dụng thực tế
+### 🎯 Practical Applications
 
-- **Xử lý log files** lớn từ web servers
-- **Phân tích dữ liệu** không cấu trúc (văn bản, clickstream)
-- **ETL pipelines** cho Big Data
-- **Machine Learning** trên tập dữ liệu phân tán
-- **Học tập và nghiên cứu** về hệ thống phân tán
+- **Processing large log files** from web servers
+- **Analyzing unstructured data** (text, clickstream)
+- **ETL pipelines** for Big Data
+- **Machine Learning** on distributed datasets
+- **Learning and research** about distributed systems
 
 ---
 
-## 7. Liên hệ giữa hai phần
-=======
-## 6. Connection Between Both Parts
->>>>>>> ef9263bc0ee71eaa62841a57c9ef634866ffe0c0
+## 7. Connection Between Both Parts
 
 | ⚙️ **Comparison** | 🧩 **SQL Server (Replication)** | ☁️ **Hadoop (MapReduce)** |
 | --- | --- | --- |
@@ -597,11 +563,7 @@ Kết quả WordCount cho thấy:
 
 ---
 
-<<<<<<< HEAD
-## 8. Kết quả & Đánh giá
-=======
-## 7. Results & Evaluation
->>>>>>> ef9263bc0ee71eaa62841a57c9ef634866ffe0c0
+## 8. Results & Evaluation
 
 ### 🎓 **General Project – SQL Server (Distributed Fund Management)**
 
@@ -618,11 +580,7 @@ Kết quả WordCount cho thấy:
 
 ---
 
-<<<<<<< HEAD
-## 9. Tác giả
-=======
-## 8. Authors
->>>>>>> ef9263bc0ee71eaa62841a57c9ef634866ffe0c0
+## 9. Authors
 
 | 🧑‍🎓 Member | 🎯 Student ID | 📬 Contact |
 | --- | --- | --- |
@@ -633,11 +591,7 @@ Kết quả WordCount cho thấy:
 
 ---
 
-<<<<<<< HEAD
 ## 10. License
-=======
-## 9. License
->>>>>>> ef9263bc0ee71eaa62841a57c9ef634866ffe0c0
 
 📖 This document is compiled for **educational and knowledge-sharing purposes** in the *Distributed Database Systems* subject at **Saigon University**.
 

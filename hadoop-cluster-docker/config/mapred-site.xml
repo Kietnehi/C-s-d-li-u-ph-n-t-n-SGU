@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<configuration>
+    <!-- Chỉ định Framework MapReduce sử dụng YARN -->
+    <property>
+        <name>mapreduce.framework.name</name>
+        <value>yarn</value>
+    </property>
+
+    <!-- Tăng bộ nhớ cho các task Map -->
+    <property>
+        <name>mapreduce.map.memory.mb</name>
+        <value>4096</value>
+        <!-- Bộ nhớ cho mỗi task Map (MB) -->
+    </property>
+    
+    <property>
+        <name>mapreduce.map.java.opts</name>
+        <value>-Xmx3400m</value>
+        <!-- Tối đa heap memory cho task Map -->
+    </property>
+
+    <!-- Cung cấp vcore cho task Map -->
+    <property>
+        <name>mapreduce.map.cpu.vcores</name>
+        <value>2</value> <!-- Số vcore dành cho mỗi task Map -->
+    </property>
+
+    <!-- Tăng bộ nhớ cho các task Reduce -->
+    <property>
+        <name>mapreduce.reduce.memory.mb</name>
+        <value>4096</value>
+        <!-- Bộ nhớ cho mỗi task Reduce (MB) -->
+    </property>
+
+    <property>
+        <name>mapreduce.reduce.java.opts</name>
+        <value>-Xmx3400m</value>
+        <!-- Tối đa heap memory cho task Reduce -->
+    </property>
+
+    <!-- Cung cấp vcore cho task Reduce -->
+    <property>
+        <name>mapreduce.reduce.cpu.vcores</name>
+        <value>2</value> <!-- Số vcore dành cho mỗi task Reduce -->
+    </property>
+
+    <!-- Thêm các cấu hình khác nếu cần thiết -->
+</configuration>

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<configuration>
+    <!-- Cấu hình Aux Service cho Shuffle trong YARN -->
+    <property>
+        <name>yarn.nodemanager.aux-services</name>
+        <value>mapreduce_shuffle</value>
+    </property>
+
+    <!-- Cấu hình lớp ShuffleHandler để YARN sử dụng trong MapReduce -->
+    <property>
+        <name>yarn.nodemanager.aux-services.mapreduce_shuffle.class</name>
+        <value>org.apache.hadoop.mapred.ShuffleHandler</value>
+    </property>
+
+    <!-- Cấu hình hostname của ResourceManager -->
+    <property>
+        <name>yarn.resourcemanager.hostname</name>
+        <value>hadoop-master</value> <!-- Đảm bảo rằng tên máy chủ là chính xác và có thể truy cập từ các node trong cluster -->
+    </property>
+
+    <!-- Tăng bộ nhớ cho ResourceManager -->
+    <property>
+        <name>yarn.resourcemanager.resource.memory-mb</name>
+        <value>8192</value> <!-- Bộ nhớ cho ResourceManager, ví dụ: 8GB -->
+    </property>
+
+    <!-- Tăng bộ nhớ cho NodeManager -->
+    <property>
+        <name>yarn.nodemanager.resource.memory-mb</name>
+        <value>8192</value> <!-- Bộ nhớ cho mỗi NodeManager, ví dụ: 8GB -->
+    </property>
+
+    <!-- Cấu hình số nhân CPU mà NodeManager quản lý -->
+    <property>
+        <name>yarn.nodemanager.resource.cpu-vcores</name>
+        <value>8</value> <!-- Tổng số CPU logic (vcores) mà NodeManager có thể cấp phát -->
+    </property>
+
+    <!-- Số vcore tối đa mà mỗi container có thể sử dụng -->
+    <property>
+        <name>yarn.scheduler.maximum-allocation-vcores</name>
+        <value>4</value> <!-- Số nhân tối đa mà một container được cấp -->
+    </property>
+
+    <!-- Tăng bộ nhớ tối đa mà YARN có thể cấp phát cho mỗi container -->
+    <property>
+        <name>yarn.scheduler.maximum-allocation-mb</name>
+        <value>8192</value> <!-- Tăng bộ nhớ tối đa mỗi container có thể sử dụng -->
+    </property>
+
+    <!-- Cấu hình bộ nhớ cho mỗi container MapReduce -->
+    <property>
+        <name>mapreduce.map.memory.mb</name>
+        <value>4096</value> <!-- Bộ nhớ cho mỗi mapper, ví dụ: 4GB -->
+    </property>
+    <property>
+        <name>mapreduce.reduce.memory.mb</name>
+        <value>4096</value> <!-- Bộ nhớ cho mỗi reducer, ví dụ: 4GB -->
+    </property>
+
+    <!-- Tăng bộ nhớ heap cho Java VM của ResourceManager -->
+    <property>
+        <name>yarn.resourcemanager.heap.memory.mb</name>
+        <value>4096</value> <!-- Bộ nhớ heap cho ResourceManager, ví dụ: 4GB -->
+    </property>
+
+    <!-- Tăng bộ nhớ heap cho Java VM của NodeManager -->
+    <property>
+        <name>yarn.nodemanager.heap.memory.mb</name>
+        <value>4096</value> <!-- Bộ nhớ heap cho NodeManager, ví dụ: 4GB -->
+    </property>
+</configuration>
